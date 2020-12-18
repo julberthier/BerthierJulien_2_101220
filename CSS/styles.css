@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap);
+
+/*CSS de la page*/
+
+body {
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+ 
+
+/* Tête de la page */
+
+header.header {
+    display: flex;
+    align-items:center;  
+    height: 100px;
+}
+
+header.header img {
+    width: 100px;
+}
+
+section.top-page {
+    height: 10vh;
+}
+
+h1.titre1 {
+font-weight: bolder;
+font-size: x-large;
+}
+
+/* menu  de navigation */
+
+nav.nav {
+display: flex;
+align-content: space-around;
+list-style: none;
+margin-left: 1400px;
+width: 540px;
+}
+
+
+li.inscription {
+color: #0065FC;
+font-weight: 700;
+text-decoration: none;
+}
+
+li :hover {
+    color: #0065FC;
+    text-decoration:none;
+    font-weight: 600;
+}
+
+
+/* Icones */
+
+.fa-money-bill-wave {
+    color: #0065FC;
+}
+
+.fa-child {
+    color: #0065FC;
+}
+
+.fa-heart {
+color: #0065FC;
+
+}
+
+.fa-dog {
+    color:#0065FC
+}
+
+/*options*/ 
+
+.options {
+display: flex;
+align-content: center;
+font-weight: bold;
+}
+
+/*Footer de la page*/
+
+footer.footer {
+display: flex;
+width: 99%;
+height: 200px;
+list-style: none;
+justify-content: space-between;
+background-color: #F2F2F2;
+}
+
+li.bold {
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.conteneur {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-bottom: auto;
+    margin-left: 20px;
+}
