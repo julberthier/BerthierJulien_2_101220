@@ -138,9 +138,12 @@ section.options span {
 }
 
 .soustitre2 {
+    display: flex;
     font-weight: 600;
     font-size: 15px;
-    transform: translateY();
+    transform: translateY(400px);
+    position: absolute;    
+
 }
 
 div.overlay {
