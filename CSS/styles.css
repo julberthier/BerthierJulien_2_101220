@@ -61,7 +61,7 @@ nav.nav {
     display: flex;
     align-content: space-between;
     list-style: none;
-    margin-left: 55%;
+    margin-left: 65%;
     width: 340px;
 }
 
@@ -130,23 +130,39 @@ section.options span {
     height: 55vh;   
     width: 90vh; 
     margin: 10px;
-    position: relative;}
+}
     
 .titheb {
     font-weight: 800;
     font-size: 18px;
 }
 
+.soustitre2 {
+    font-weight: 600;
+    font-size: 15px;
+    transform: translateY();
+}
+
 div.overlay {
-    display: flex;
     background-color: #ffffff;
     width: 200px;
     height: 40px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     padding: 10px;
     font-size: 12px;
     font-weight: 600;
+    transform: translateY(91px);
+    }
+
+#desc {
+display: flex;
+flex-direction: column;
+}
+
+.nuit {
+    margin-top: 5px;
+    margin-bottom: 2px;
 }
 
 .hebergement-images {
@@ -163,7 +179,7 @@ margin-top: 35px;
     width: 220px;
     border-radius: 20px;
     margin: 10px;
-    background-size: 120%;
+    background-size: 100%; 
 
 }
 .port {     
