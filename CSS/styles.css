@@ -4,12 +4,22 @@
 
 body {
     font-family: 'Raleway', Arial, sans-serif;
+    margin: 0 auto;    
 }
 
 
 a {
     text-decoration: none;
     color: black;
+}
+
+a :hover {
+    color: #0065FC;
+    text-decoration: none;
+}
+
+section.page {
+    margin-left: 35px;
 }
  
 
@@ -18,11 +28,13 @@ a {
 header.header {
     display: flex;
     align-items:center;  
-    height: 100px;
+    height: 50%;
+    margin-top: 2%;
 }
 
 header.header img {
-    width: 100px;
+    width: 80px;
+    margin-left: 10px;
 }
 
 section.top-page {
@@ -30,8 +42,17 @@ section.top-page {
 }
 
 h1.titre1 {
-    font-weight: bolder;
-    font-size: x-large;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.soustitre1 {
+font-weight: 500;
+font-size: 13px;
+}
+
+.landing-page {
+    line-height: 10px;
 }
 
 /* menu  de navigation */
@@ -40,23 +61,30 @@ nav.nav {
     display: flex;
     align-content: space-between;
     list-style: none;
-    margin-left: 1400px;
-    width: 540px;
+    margin-left: 55%;
+    width: 340px;
+}
+
+nav.nav li {
+margin: 50px;
 }
 
 
 li.inscription {
-    color: #0065FC;
     font-weight: 700;
     text-decoration: none;
+    color: #0065FC;
 }
 
 li :hover {
-    color: #0065FC;
     text-decoration:none;
     font-weight: 600;
+    color: #0065FC;
 }
 
+nav li.inscription a {
+    color: #0065FC;
+}
 
 /* Icones */
 
@@ -81,15 +109,128 @@ li :hover {
 
 section.options {
     display: flex;
-    align-content: center;
     font-weight: bold;
+    width: 30%;
 }
 
+section.options span {
+    margin: 10px;
+  }
+
+/* Hebergements à Marseille */
+
+.hebergement {
+    display: flex;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    transform: scale(1);
+    font-size: 15px;
+    font-weight: 700;
+    padding: 50px;
+    height: 55vh;   
+    width: 90vh; 
+    margin: 10px;
+    position: relative;}
+    
+.titheb {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+div.overlay {
+    display: flex;
+    background-color: #ffffff;
+    width: 200px;
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.hebergement-images {
+display: flex;
+flex-flow: column wrap;
+margin: 15px;
+margin-left: -240px;
+margin-top: 35px;
+}
+
+.Cannebiere { 
+    background: url(../images/hebergements/4_small/Auberge\ la\ Cannebiere.jpg);
+    height: 150px;
+    width: 220px;
+    border-radius: 20px;
+    margin: 10px;
+    background-size: 120%;
+
+}
+.port {     
+    background: url(../images/hebergements/4_small/Hôtel\ du\ port.jpg);
+    height: 150px;
+    width: 220px;
+    border-radius: 20px;
+    margin: 10px;
+    background-size: 120%;
+
+}
+.mouettes { 
+    background: url(../images/hebergements/4_small/Hôtel\ les\ mouettes.jpg);
+    height: 150px;
+    width: 220px;
+    border-radius: 20px;
+    margin: 10px;
+    background-size: 120%;
+
+}
+
+.mer {
+    background: url(../images/hebergements/4_small/Hôtel\ de\ la\ mer.jpg);
+    height: 150px;
+    width: 220px;
+    border-radius: 20px;
+    margin: 10px;
+    background-size: 100%;
+}
+
+.Panier {
+    background: url(../images/hebergements/4_small/Auberge\ Le\ Panier.jpg);
+    height: 150px;
+    width: 220px;
+    border-radius: 20px;
+    margin: 10px;
+    background-size: 130%;
+
+}
+.Amina { 
+    background: url(../images/hebergements/4_small/Hôtel\ chez\ Amina.jpg);
+    height: 150px;
+    width: 220px;
+    border-radius: 20px;
+    margin: 10px;
+    background-size: 100%;
+    background-position-y: -60px;
+}
+
+
+
+.fa-star {
+    color: #0065FC;
+}
+
+#gris {
+    color: #F2F2F2;
+}
+
+.nom {
+    font-weight: 800;
+}
 /*Footer de la page*/
 
 footer.footer {
     display: flex;
-    width: 99%;
+    width: 100%;
     height: 200px;
     list-style: none;
     justify-content: space-between;
@@ -108,4 +249,9 @@ section.conteneur {
     width: 40%;
     margin-bottom: auto;
     margin-left: 20px;
+    
+}
+
+section.conteneur li {
+    margin: 10px;
 }
