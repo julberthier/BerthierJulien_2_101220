@@ -467,7 +467,7 @@ div.coté {
     background-color: #F2F2F2;
     border-radius: 20px;
     position: absolute;
-    transform: translate(1000px, -580px);     
+    transform: translate(900px, -580px);     
 }
 
 div.popu { 
@@ -540,7 +540,7 @@ div.overlay2 {
 
 .fa-chart-line {
     position: absolute;
-    transform: translate(298px, -542px);       
+    transform: translate(298px, -485px);       
 }
 
 #desc2 {
@@ -549,6 +549,15 @@ div.overlay2 {
     font-size: 14px;   
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.stars {
+transform: translate(15px, 35px);
+}
+
+.nom1 {
+    margin-left: -18px;
+    font-weight: 800;
 }
 
 /*Footer de la page*/
