@@ -2,11 +2,14 @@
 
 /*CSS de la page*/
 
-body {
-    font-family: 'Raleway', sans-serif;
-    margin: 0 auto;    
+*{
+
 }
 
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+}
 
 a {
     text-decoration: none;
@@ -31,6 +34,14 @@ body {
     width: auto;
 }
 
+}
+
+@media all and (min-device-width: 1080px)
+{
+
+body {
+    width: auto;
+    height: auto;}
 }
 
 /* Tête de la page */
@@ -77,7 +88,7 @@ nav.nav {
 
 nav.nav li {
 margin-left: 60px;
-margin-top: -71px;
+margin-top: -5vh;
 padding-top: 55px;
 }
 
@@ -109,6 +120,7 @@ nav li.inscription a {
     border: 0.2px solid #F2F2F2;
     width: 350px;
     border-radius: 6px;
+    margin-top: 20px;    
 }
 
 #bouton_recherche {
@@ -126,10 +138,13 @@ nav li.inscription a {
     font-weight: 800;
     width: 250px;
     padding-left: 5px;
+    text-align: center;
 }
 
-#texte_recherche:visited {
-    border: 0px;
+input#texte_recherche
+{
+    border: none;
+
 }
 
 #icone {
@@ -153,7 +168,7 @@ nav li.inscription a {
     background-color: #d0e2fc; 
     border-radius: 100%;
     width: 40px;
-    transform: translateX(50px);      
+    transform: translateX(60px);      
 }
 
 .fa-child {
@@ -164,7 +179,7 @@ nav li.inscription a {
     background-color: #d0e2fc; 
     border-radius: 100%;
     width: 40px;
-    transform: translateX(50px);      
+    transform: translateX(55px);      
 }
 
 .fa-heart {
@@ -175,7 +190,7 @@ nav li.inscription a {
     background-color: #d0e2fc; 
     border-radius: 100%;
     width: 40px;
-    transform: translateX(50px);      
+    transform: translateX(60px);      
 }
 
 .fa-dog {
@@ -186,17 +201,19 @@ nav li.inscription a {
     background-color: #d0e2fc; 
     border-radius: 100%;
     width: 40px;
-    transform: translateX(50px);       
+    transform: translateX(60px);       
 }
 
 /*options*/ 
 
 section.options {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     font-weight: 700;
-    width: 40%;   
+    width: 45%;   
+    margin-top: 15px;
+
 }
 
 section.options div {
@@ -205,7 +222,7 @@ section.options div {
 }
 
 .economique {
-    border: 1px solid rgb(221, 221, 221);
+    border: 2px solid rgb(221, 221, 221);
     margin: 10px;
     padding: 10px;
     padding-left: 50px;
@@ -214,16 +231,16 @@ section.options div {
 }
 
 .familial {
-    border: 1px solid rgb(221, 221, 221);
+    border: 2px solid rgb(221, 221, 221);
     margin: 10px;
     padding: 10px;
-    padding-left: 50px;
+    padding-left: 40px;
     padding-right: 20px;
     border-radius: 50px;
 }
 
 .love {
-    border: 1px solid rgb(221, 221, 221);
+    border: 2px solid rgb(221, 221, 221);
     margin: 10px;
     padding: 10px;
     padding-left: 50px;
@@ -232,15 +249,57 @@ section.options div {
 }
 
 .dogs {
-    border: 1px solid rgb(221, 221, 221);
+    border: 2px solid rgb(221, 221, 221);
     margin: 10px;
     padding: 10px;
     padding-left: 50px;
-    padding-right: 20px;
+    padding-right: 15px;
     border-radius: 50px;
     width: 150px;
 }
 
+.economique:hover {
+    border: solid 3px #0065FC;
+}
+
+.familial:hover {
+    border: solid 3px #0065FC;
+}
+
+.love:hover {
+    border: solid 3px #0065FC;
+}
+
+.dogs:hover {
+    border: solid 3px #0065FC;
+}
+
+/* Informations logements ville */
+
+#infos {
+    display: flex;
+    justify-content: space-between;
+    width: 24%;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+    font-weight: 800;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.many {
+position: absolute;
+transform: translateX(40px);
+}
 
 /* Hebergements à Marseille */
 
@@ -317,6 +376,7 @@ margin-top: 35px;
     order: 1;
     border: 5px solid #ffffff;
     box-shadow: 0px 0px 10px gray;
+    background-position-y: -165px;
 }
 
 .port {     
@@ -329,6 +389,7 @@ margin-top: 35px;
     order: 2;
     border: 5px solid #ffffff;
     box-shadow: 0px 0px 10px gray;
+    background-position-y: -70px;
 }
 
 .mouettes { 
@@ -341,6 +402,7 @@ margin-top: 35px;
     order: 3;
     border: 5px solid #ffffff;
     box-shadow: 0px 0px 10px gray;
+    background-position-y: -245px;
 }
 
 .mer {
@@ -353,6 +415,8 @@ margin-top: 35px;
     order: 4;
     border: 5px solid #ffffff;
     box-shadow: 0px 0px 10px gray;
+    background-position-y: -110px;
+
 }
 
 .Panier {
@@ -365,6 +429,8 @@ margin-top: 35px;
     order: 5;
     border: 5px solid #ffffff;
     box-shadow: 0px 0px 10px gray;
+    background-position-x: -10px
+
 }
 
 .Amina { 
@@ -374,7 +440,7 @@ margin-top: 35px;
     border-radius: 20px;
     margin: 10px;
     background-size: 100%;
-    background-position-y: -60px;
+    background-position-y: -150px;
     order: 6;
     border: 5px solid #ffffff;
     box-shadow: 0px 0px 10px gray;
@@ -394,20 +460,96 @@ margin-top: 35px;
 
 /* Aside Les plus populaires */
 
-aside {
+div.coté {   
     float:  right;
-    width: 70vh;
-    height: 54vh;
+    width: 45vh;
+    height: 63vh;
     background-color: #F2F2F2;
     border-radius: 20px;
     position: absolute;
-    transform: translate(1000px, -513px);
+    transform: translate(1000px, -580px);     
 }
 
-aside > .hebergement {
-    margin: 2%;
+div.popu { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
 }
 
+    .titpopu {
+    font-weight: 800;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.soleil { 
+    background: url(../images/hebergements/4_small/Hôtel\ le\ soleil\ du\ matin.jpg);
+    height: 120px;
+    width: 290px;
+    border-radius: 20px;
+    margin: 10px;
+    background-size: 100%;   
+    border: 5px solid #ffffff;
+    box-shadow: 0px 0px 10px gray;
+    background-position-y: -70px;
+    background-position-x: -50px;
+}
+
+.coeur_eau { 
+    background: url(../images/hebergements/4_small/Au\ coeur\ de\ l_eau.jpg);
+    height: 120px;
+    width: 290px;
+    border-radius: 20px;
+    margin: 10px;
+    background-size: 100%;     
+    border: 5px solid #ffffff;
+    box-shadow: 0px 0px 10px gray;
+    margin-left: -5px;
+    background-position-y: -80px;
+    background-position-x: -50px;
+}
+
+.bleu_blanc { 
+    background: url(../images/hebergements/4_small/Hôtel\ Tout\ bleu\ et\ blanc.jpg);
+    height: 120px;
+    width: 290px;
+    border-radius: 20px;
+    margin: 10px;
+    background-size: 100%;     
+    border: 5px solid #ffffff;
+    box-shadow: 0px 0px 10px gray;
+    margin-left: -5px;
+    background-position-y: -175px;
+    background-position-x: -30px;
+}
+
+div.overlay2 {
+    background-color: #ffffff;
+    width: 160px;
+    height: 110px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 7px;
+    font-size: 12px;
+    font-weight: 600;
+    transform: translate(119px, -5px);
+    border-top: 5px solid #ffffff;
+}
+
+.fa-chart-line {
+    position: absolute;
+    transform: translate(298px, -542px);       
+}
+
+#desc2 {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;   
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
 /*Footer de la page*/
 
