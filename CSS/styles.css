@@ -127,29 +127,32 @@ section.options span {
     font-size: 15px;
     font-weight: 700;
     padding: 50px;
-    height: 55vh;   
-    width: 90vh; 
+    height: 43vh;   
+    width: 75vh; 
     margin: 10px;
 }
     
 .titheb {
     font-weight: 800;
     font-size: 18px;
+    margin-top: -1%;
 }
 
-.soustitre2 {
-    display: flex;
+.soustitre2 {    
     font-weight: 600;
     font-size: 15px;
-    transform: translateY(400px);
-    position: absolute;    
+    transform: translate(-245px, 380px);
+    position: absolute;
+}
 
+.soustitre2:hover{
+color: #0065FC;
 }
 
 div.overlay {
     background-color: #ffffff;
     width: 200px;
-    height: 40px;
+    height: 45px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     padding: 10px;
@@ -165,7 +168,7 @@ flex-direction: column;
 
 .nuit {
     margin-top: 5px;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
 }
 
 .hebergement-images {
@@ -183,8 +186,10 @@ margin-top: 35px;
     border-radius: 20px;
     margin: 10px;
     background-size: 100%; 
-
+    order: 1;
+    
 }
+
 .port {     
     background: url(../images/hebergements/4_small/Hôtel\ du\ port.jpg);
     height: 150px;
@@ -192,8 +197,9 @@ margin-top: 35px;
     border-radius: 20px;
     margin: 10px;
     background-size: 120%;
-
+    order: 2;
 }
+
 .mouettes { 
     background: url(../images/hebergements/4_small/Hôtel\ les\ mouettes.jpg);
     height: 150px;
@@ -201,7 +207,7 @@ margin-top: 35px;
     border-radius: 20px;
     margin: 10px;
     background-size: 120%;
-
+    order: 3;
 }
 
 .mer {
@@ -211,6 +217,7 @@ margin-top: 35px;
     border-radius: 20px;
     margin: 10px;
     background-size: 100%;
+    order: 4;
 }
 
 .Panier {
@@ -220,6 +227,7 @@ margin-top: 35px;
     border-radius: 20px;
     margin: 10px;
     background-size: 130%;
+    order: 5;
 
 }
 .Amina { 
@@ -230,9 +238,8 @@ margin-top: 35px;
     margin: 10px;
     background-size: 100%;
     background-position-y: -60px;
+    order: 6;
 }
-
-
 
 .fa-star {
     color: #0065FC;
@@ -245,6 +252,24 @@ margin-top: 35px;
 .nom {
     font-weight: 800;
 }
+
+/* Aside Les plus populaires */
+
+aside {
+    float:  right;
+    width: 70vh;
+    height: 54vh;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    position: absolute;
+    transform: translate(1000px, -513px);
+}
+
+aside > .hebergement {
+    margin: 2%;
+}
+
+
 /*Footer de la page*/
 
 footer.footer {
@@ -266,6 +291,7 @@ section.conteneur {
     display: flex;
     justify-content: space-between;
     width: 40%;
+    padding-top: 1%;
     margin-bottom: auto;
     margin-left: 20px;
     
