@@ -3,7 +3,7 @@
 /*CSS de la page*/
 
 body {
-    font-family: 'Raleway', Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0 auto;    
 }
 
@@ -13,7 +13,7 @@ a {
     color: black;
 }
 
-a :hover {
+a:hover {
     color: #0065FC;
     text-decoration: none;
 }
@@ -22,6 +22,16 @@ section.page {
     margin-left: 35px;
 }
  
+/* Media Queries */
+
+@media all and (max-device-width: 1024px) 
+{
+
+body {
+    width: auto;
+}
+
+}
 
 /* Tête de la page */
 
@@ -66,9 +76,14 @@ nav.nav {
 }
 
 nav.nav li {
-margin: 50px;
+margin-left: 60px;
+margin-top: -71px;
+padding-top: 55px;
 }
 
+nav.nav li:hover {
+border-top: 2px solid #0065FC;
+}
 
 li.inscription {
     font-weight: 700;
@@ -84,6 +99,48 @@ li :hover {
 
 nav li.inscription a {
     color: #0065FC;
+}
+
+
+/* Zone de recherche */
+
+#zone_recherche {
+    display: flex;
+    border: 0.2px solid #F2F2F2;
+    width: 350px;
+    border-radius: 6px;
+}
+
+#bouton_recherche {
+    background-color: #0065FC;
+    font-weight: 800;
+    color: #F2F2F2;
+    border: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 35px;
+}
+
+#texte_recherche {
+    border: 0px;
+    font-weight: 800;
+    width: 250px;
+    padding-left: 5px;
+}
+
+#texte_recherche:visited {
+    border: 0px;
+}
+
+#icone {
+    display: flex;
+    background-color: rgb(221, 221, 221);
+    height: 35px;
+    width: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Icones */
@@ -102,20 +159,23 @@ nav li.inscription a {
 }
 
 .fa-dog {
-    color:#0065FC
+    color:#0065FC;
+    background-color: #d0e2fc;        
 }
 
 /*options*/ 
 
 section.options {
     display: flex;
-    font-weight: bold;
-    width: 30%;
+    justify-content: space-between;
+    font-weight: 700;
+    width: 40%;   
 }
 
-section.options span {
-    margin: 10px;
-  }
+section.options div {
+    display: flex;
+    margin: 10px;   
+}
 
 /* Hebergements à Marseille */
 
@@ -127,21 +187,21 @@ section.options span {
     font-size: 15px;
     font-weight: 700;
     padding: 50px;
-    height: 43vh;   
-    width: 75vh; 
+    height: 50vh;   
+    width: 80vh; 
     margin: 10px;
 }
     
 .titheb {
     font-weight: 800;
-    font-size: 18px;
+    font-size: 20px;
     margin-top: -1%;
 }
 
 .soustitre2 {    
-    font-weight: 600;
-    font-size: 15px;
-    transform: translate(-245px, 380px);
+    font-weight: 700;
+    font-size: 16px;
+    transform: translate(-245px, 455px);
     position: absolute;
 }
 
@@ -152,7 +212,7 @@ color: #0065FC;
 div.overlay {
     background-color: #ffffff;
     width: 200px;
-    height: 45px;
+    height: 50px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     padding: 10px;
@@ -164,6 +224,8 @@ div.overlay {
 #desc {
 display: flex;
 flex-direction: column;
+font-size: 14px;
+transform: translateY(-4px);
 }
 
 .nuit {
@@ -174,8 +236,9 @@ flex-direction: column;
 .hebergement-images {
 display: flex;
 flex-flow: column wrap;
+align-content: space-between;
 margin: 15px;
-margin-left: -240px;
+margin-left: -270px;
 margin-top: 35px;
 }
 
@@ -187,7 +250,8 @@ margin-top: 35px;
     margin: 10px;
     background-size: 100%; 
     order: 1;
-    
+    border: 5px solid #ffffff;
+    box-shadow: 0px 0px 10px gray;
 }
 
 .port {     
@@ -198,6 +262,8 @@ margin-top: 35px;
     margin: 10px;
     background-size: 120%;
     order: 2;
+    border: 5px solid #ffffff;
+    box-shadow: 0px 0px 10px gray;
 }
 
 .mouettes { 
@@ -208,6 +274,8 @@ margin-top: 35px;
     margin: 10px;
     background-size: 120%;
     order: 3;
+    border: 5px solid #ffffff;
+    box-shadow: 0px 0px 10px gray;
 }
 
 .mer {
@@ -218,6 +286,8 @@ margin-top: 35px;
     margin: 10px;
     background-size: 100%;
     order: 4;
+    border: 5px solid #ffffff;
+    box-shadow: 0px 0px 10px gray;
 }
 
 .Panier {
@@ -228,8 +298,10 @@ margin-top: 35px;
     margin: 10px;
     background-size: 130%;
     order: 5;
-
+    border: 5px solid #ffffff;
+    box-shadow: 0px 0px 10px gray;
 }
+
 .Amina { 
     background: url(../images/hebergements/4_small/Hôtel\ chez\ Amina.jpg);
     height: 150px;
@@ -239,6 +311,8 @@ margin-top: 35px;
     background-size: 100%;
     background-position-y: -60px;
     order: 6;
+    border: 5px solid #ffffff;
+    box-shadow: 0px 0px 10px gray;
 }
 
 .fa-star {

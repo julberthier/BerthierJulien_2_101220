@@ -29,17 +29,23 @@
         <h1 class="titre1">Trouvez votre hébergement pour des vacances de rêve</h1>
         <p class="soustitre1">En plein centre ville ou en pleine nature</p>      
     </div>    
-   
-   <i class="fas fa-map-marker-alt"></i>
+
+    <!-- Barre de recherche -->  
+
+   <div id="zone_recherche">
+    <i class="fas fa-map-marker-alt" id="icone"></i>
+	    <input id="texte_recherche" type="text" value="" />
+	    <input id="bouton_recherche" type="submit" value="Rechercher"/>
+   </div>
 
    <!-- Filtres -->
 
    <section class="options">
-      <span>Filtres</span>       
-        <span class="fas fa-money-bill-wave"></span> <!--billet icons--> <p>Economique</p>
-        <span class="fas fa-child"></span> <!--Personne icons--> <p>Familial</p>
-        <span class="fas fa-heart"></span> <!--coeur icons--><p>Romantique</p>
-        <span class="fas fa-dog"></span> <!--Chien icons--><p>Animaux autorisés</p>
+      <div>Filtres</div>       
+        <div class="billet"><div class="fas fa-money-bill-wave"></div> <!--billet icons--> <p>Economique</p></div>
+        <div class="personne"><div class="fas fa-child"></div> <!--Personne icons--> <p>Familial</p></div>
+        <div class="romantique"><div class="fas fa-heart"></div> <!--coeur icons--><p>Romantique</p></div>
+       <div class="animaux"><div class="fas fa-dog"></div> <!--Chien icons--><p>Animaux autorisés</p></div>
     </section>
 
     <!-- Informations disponibilité logements -->
