@@ -33,6 +33,7 @@ section.page {
 
 body {
     width: auto;
+    margin: auto;
 }
 
 }
@@ -112,8 +113,10 @@ nav li.inscription a {
     display: flex;
     border: 0.2px solid #F2F2F2;
     width: 350px;
-    border-radius: 6px;
+    border-radius: 10px;
     margin-top: 20px;    
+    font-weight: 700;
+    font-size: 14px;
 }
 
 #bouton_recherche {
@@ -121,9 +124,13 @@ nav li.inscription a {
     font-weight: 800;
     color: #F2F2F2;
     border: 0px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     height: 35px;
+    width: 150px;
+    outline-style:none;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 #texte_recherche {
@@ -132,6 +139,7 @@ nav li.inscription a {
     width: 250px;
     padding-left: 5px;
     text-align: center;
+    outline-style:none
 }
 
 input#texte_recherche
@@ -145,8 +153,8 @@ input#texte_recherche
     background-color: rgb(221, 221, 221);
     height: 35px;
     width: 40px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     justify-content: center;
     align-items: center;
 }
@@ -296,32 +304,28 @@ transform: translateX(40px);
 
 /* Hebergements à Marseille */
 
-.hebergement {
-    display: flex;
+.hebergement {    
     background-color: #F2F2F2;
-    border-radius: 20px;
-    transform: scale(1);
-    font-size: 15px;
-    font-weight: 700;
-    padding: 50px;
+    border-radius: 20px;   
+    padding: 48px;
     height: 63vh;   
-    width: 122vh; 
-    margin-top: 10px;
-    margin-left: 10px;
+    width: 132vh; 
     margin-bottom: 10px;  
     padding-right: -5px;
 }
     
 .titheb {
     font-weight: 800;
-    font-size: 22px;
-    margin-top: -20px;
+    font-size: 24px;
+    margin-top: -20px;  
+    width: 200px;
+    height: 50px;   
 }
 
 .soustitre2 {    
     font-weight: 700;
     font-size: 18px;
-    transform: translate(-390px, 555px);
+    transform: translate(0px, -30px);
     position: absolute;
 }
 
@@ -355,12 +359,14 @@ margin: 5px;
 }
 
 .hebergement-images {   
-    display: flex;
-    flex-flow: column wrap;
-    align-content: space-between;
-    margin: 25px;
-    margin-left: -270px;
-    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: (2, 300px);
+    margin-bottom: 50px;
+    margin-top: 10px;
+    column-gap: 30px;
+    row-gap: 15px;
+    margin-left: -8px;
 }
 
 .Cannebiere { 
@@ -511,7 +517,6 @@ div.popu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 25px;
     padding: 5px;
     height: 590px;
     width: 550px;    
@@ -522,6 +527,7 @@ div.popu {
     font-size: 22px;
     padding-left: 45px;
     padding-top: 10px;
+    margin-top: 16px;
 }
 
 .soleil { 
@@ -529,7 +535,7 @@ div.popu {
     height: 160px;
     width: 390px;
     border-radius: 20px;
-    margin: 10px;
+    margin: 2px;
     background-size: 100%;   
     border: 5px solid #ffffff;
     box-shadow: 0px 0px 10px gray;
@@ -542,7 +548,7 @@ div.popu {
     height: 160px;
     width: 390px;
     border-radius: 20px;
-    margin: 10px;
+    margin: 2px;
     background-size: 100%;     
     border: 5px solid #ffffff;
     box-shadow: 0px 0px 10px gray;
@@ -556,7 +562,7 @@ div.popu {
     height: 160px;
     width: 390px;
     border-radius: 20px;
-    margin: 10px;
+    margin: 2px;
     background-size: 100%;     
     border: 5px solid #ffffff;
     box-shadow: 0px 0px 10px gray;
