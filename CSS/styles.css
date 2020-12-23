@@ -4,16 +4,19 @@
 
 *{
 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
 body {
     font-family: 'Raleway', sans-serif;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: auto;
-    margin-bottom: auto;
-    width: auto;
-    height: auto;
+}
+
+section.page {
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 a {
@@ -24,10 +27,6 @@ a {
 a:hover {
     color: #0065FC;
     text-decoration: none;
-}
-
-section.page {
-    margin-left: 35px;
 }
  
 /* Media Queries */
@@ -43,6 +42,10 @@ body {
 }
 
 /* Tête de la page */
+section.top-page {
+    height: 10vh;
+    margin-top: 0;
+}
 
 header.header {
     display: flex;
@@ -52,12 +55,50 @@ header.header {
 }
 
 header.header img {
-    width: 80px;
-    margin-left: 10px;
+    width: 25%;
 }
 
-section.top-page {
-    height: 10vh;
+
+/* menu  de navigation */
+
+nav.nav {
+    display: flex;
+    align-content: space-between;
+    list-style: none;
+    margin-left: 50%;
+    width: 340px;
+}
+
+nav.nav li {
+    margin-left: 60px;
+}
+
+nav.nav li:hover {
+
+}
+
+li.inscription {
+    font-weight: 700;
+    text-decoration: none;
+    color: #0065FC;
+    transition: 0.3s all;
+}
+
+li :hover {
+    text-decoration:none;
+    font-weight: 700;
+    color: #0065FC;   
+    transition: 0.3s all;
+}
+
+nav li.inscription a {
+    color: #0065FC;   
+}
+
+/* Titre de la page */
+
+.landing-page {
+    line-height: 20px;
 }
 
 h1.titre1 {
@@ -70,46 +111,6 @@ font-weight: 500;
 font-size: 13px;
 }
 
-.landing-page {
-    line-height: 10px;
-}
-
-/* menu  de navigation */
-
-nav.nav {
-    display: flex;
-    align-content: space-between;
-    list-style: none;
-    margin-left: 65%;
-    width: 340px;
-}
-
-nav.nav li {
-margin-left: 60px;
-margin-top: -5vh;
-padding-top: 55px;
-}
-
-nav.nav li:hover {
-    border-top: 2px solid #0065FC;
-}
-
-li.inscription {
-    font-weight: 700;
-    text-decoration: none;
-    color: #0065FC;
-}
-
-li :hover {
-    text-decoration:none;
-    font-weight: 600;
-    color: #0065FC;
-}
-
-nav li.inscription a {
-    color: #0065FC;
-}
-
 
 /* Zone de recherche */
 
@@ -118,7 +119,7 @@ nav li.inscription a {
     border: 0.2px solid #F2F2F2;
     width: 350px;
     border-radius: 10px;
-    margin-top: 20px;    
+    margin-top: 1%;    
     font-weight: 700;
     font-size: 14px;
 }
@@ -149,7 +150,6 @@ nav li.inscription a {
 input#texte_recherche
 {
     border: none;
-
 }
 
 #icone {
@@ -172,7 +172,7 @@ input#texte_recherche
     color:#0065FC;
     background-color: #d0e2fc; 
     border-radius: 100%;
-    width: 40px;
+    width: 60px;
     transform: translateX(60px);      
 }
 
@@ -183,7 +183,7 @@ input#texte_recherche
     color:#0065FC;
     background-color: #d0e2fc; 
     border-radius: 100%;
-    width: 40px;
+    width: 60px;
     transform: translateX(55px);      
 }
 
@@ -194,7 +194,7 @@ input#texte_recherche
     color:#0065FC;
     background-color: #d0e2fc; 
     border-radius: 100%;
-    width: 40px;
+    width: 60px;
     transform: translateX(60px);      
 }
 
@@ -205,7 +205,7 @@ input#texte_recherche
     color:#0065FC;
     background-color: #d0e2fc; 
     border-radius: 100%;
-    width: 40px;
+    width: 60px;
     transform: translateX(60px);       
 }
 
@@ -217,13 +217,12 @@ section.options {
     justify-content: space-between;
     font-weight: 700;
     width: 45%;   
-    margin-top: 15px;
-
+    margin-top: 1.5%;
 }
 
 section.options div {
     display: flex;
-    margin: 10px;   
+    margin: 3%;   
 }
 
 .economique {
@@ -231,7 +230,7 @@ section.options div {
     margin: 10px;
     padding: 10px;
     padding-left: 50px;
-    padding-right: 20px;
+    padding-right: 15px;
     border-radius: 50px;
 }
 
@@ -240,7 +239,7 @@ section.options div {
     margin: 10px;
     padding: 10px;
     padding-left: 40px;
-    padding-right: 20px;
+    padding-right: 15px;
     border-radius: 50px;
 }
 
@@ -249,7 +248,7 @@ section.options div {
     margin: 10px;
     padding: 10px;
     padding-left: 50px;
-    padding-right: 20px;
+    padding-right: 15px;
     border-radius: 50px;
 }
 
@@ -260,23 +259,27 @@ section.options div {
     padding-left: 50px;
     padding-right: 15px;
     border-radius: 50px;
-    width: 150px;
+    width: 220px;
 }
 
 .economique:hover {
     border: solid 3px #0065FC;
+    transition: 0.2s all;
 }
 
 .familial:hover {
     border: solid 3px #0065FC;
+    transition: 0.2s all;
 }
 
 .love:hover {
     border: solid 3px #0065FC;
+    transition: 0.2s all;
 }
 
 .dogs:hover {
     border: solid 3px #0065FC;
+    transition: 0.2s all;
 }
 
 /* Informations logements ville */
@@ -311,11 +314,9 @@ transform: translateX(40px);
 .hebergement {    
     background-color: #F2F2F2;
     border-radius: 20px;   
-    padding: 48px;
-    height: 63vh;   
-    width: 132vh; 
-    margin-bottom: 10px;  
-    padding-right: -5px;
+    padding: 2%;
+    width: 68%; 
+    margin-bottom: 10px;
 }
     
 .titheb {
@@ -334,13 +335,13 @@ transform: translateX(40px);
 }
 
 .soustitre2:hover{
-color: #0065FC;
+    color: #0065FC;
 }
 
 div.overlay {
     background-color: #ffffff;
-    width: 330px;
-    height: 70px;
+    width: 340px;
+    height: 80px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     padding: 10px;
@@ -350,11 +351,10 @@ div.overlay {
     }
 
 #desc {
-display: flex;
-flex-direction: column;
-font-size: 18px;
-transform: translateY(-4px);
-margin: 5px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    text-align: left;
 }
 
 .nuit {
@@ -390,6 +390,8 @@ margin: 5px;
     -ms-transform: scale(1.1); 
     transform: scale(1.1);
     box-shadow: 0px 0px 25px black;
+    transition: 0.3s all;
+
 }
 
 .port {     
@@ -410,6 +412,8 @@ margin: 5px;
     -ms-transform: scale(1.1); 
     transform: scale(1.1);
     box-shadow: 0px 0px 25px black;
+    transition: 0.3s all;
+
 }
 
 .mouettes { 
@@ -430,6 +434,8 @@ margin: 5px;
     -ms-transform: scale(1.1); 
     transform: scale(1.1);
     box-shadow: 0px 0px 25px black;
+    transition: 0.3s all;
+
 }
 
 .mer {
@@ -443,6 +449,8 @@ margin: 5px;
     border: 5px solid #ffffff;
     box-shadow: 0px 0px 10px gray;
     background-position-y: -110px;
+    transition: 0.3s all;
+
 
 }
 
@@ -451,6 +459,8 @@ margin: 5px;
     -ms-transform: scale(1.1); 
     transform: scale(1.1);
     box-shadow: 0px 0px 25px black;
+    transition: 0.3s all;
+
 }
 
 .Panier {
@@ -472,6 +482,8 @@ margin: 5px;
     -ms-transform: scale(1.1); 
     transform: scale(1.1);
     box-shadow: 0px 0px 25px black;
+    transition: 0.3s all;
+
 }
 
 .Amina { 
@@ -492,7 +504,9 @@ margin: 5px;
     -ms-transform: scale(1.1); 
     transform: scale(1.1);
     box-shadow: 0px 0px 25px black;
+    transition: 0.3s all;
 }
+
 .fa-star {
     color: #0065FC;
 }
@@ -513,15 +527,15 @@ div.coté {
     height: 73.9vh;
     background-color: #F2F2F2;
     border-radius: 20px;   
-    transform: translate(-10%, -101.5%);  
-    margin-left: 5px;   
+    transform: translate(-10%, -101.5%);        
 }
 
-div.popu { 
+.popu { 
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: -30px;
+    margin-top: 10%;
     height: 590px;
     width: 550px;    
 }
@@ -577,11 +591,11 @@ div.popu {
 
 div.overlay2 {
     background-color: #ffffff;
-    width: 160px;
-    height: 150px;
+    width: 165px;
+    height: 160px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding: 7px;
+    padding: 2%;
     font-size: 14px;
     font-weight: 600;
     transform: translate(219px, -5px);
@@ -600,6 +614,7 @@ div.overlay2 {
     font-size: 14px;   
     margin-top: 5px;
     margin-bottom: 5px;
+    text-align: left;
 }
 
 .stars {
@@ -616,15 +631,15 @@ transform: translate(15px, 35px);
 .activite_titre {
     font-weight: 800;
     font-size: 20px;
-    margin-left: 15px;
+    margin: 20px 0 20px 0;    
 }
 
 .activite_grid {
     display: grid;
-    justify-content: space-between;
     min-height: 80vh;
+    min-width: 130vh;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: (4, 300px);
+    grid-template-rows: (4, 30px);
     margin-bottom: 50px;
     column-gap: 50px;
     row-gap: 25px;
@@ -646,7 +661,7 @@ transform: translate(15px, 35px);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     padding: 10px;  
-    transform: translateY(260px);
+    transform: translateY(294px);
 }
 
 #activite_box2 {
@@ -656,7 +671,7 @@ transform: translate(15px, 35px);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     padding: 10px;  
-    transform: translateY(647px);
+    transform: translateY(681px);
 }
 
 .grid_activite1
@@ -744,6 +759,7 @@ li.bold {
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 section.conteneur {
@@ -752,10 +768,9 @@ section.conteneur {
     width: 75%;
     padding-top: 1%;
     margin-bottom: auto;
-    margin-left: 20px;
-    
+    margin-left: 20px;    
 }
 
 section.conteneur li {
-    margin: 10px;
+    margin: 15px 0 0 15px;
 }
