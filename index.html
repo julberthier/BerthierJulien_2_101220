@@ -5,6 +5,7 @@
     <meta content="width=device-width, initial-scale=1.0">
     <title>Reservia</title>
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/smartphone.css" media="(min-width: 1px) and (max-width: 991.98px)">
     <script src="https://kit.fontawesome.com/d3b50b27dc.js" crossorigin="anonymous"></script>
 </head>
 
@@ -14,11 +15,11 @@
     <!-- Header de la page -->
     <section class="top-page">
     <header class="header">
-        <a href=""><img src="images/logo/Reservia@3x.png" alt="logo du site"></a>
+        <a href=""><img src="images/logo/Reservia@3x.png" alt="logo du site Reservia"></a>
         <nav class=nav>
             <ul class="navig">
-            <li><a href="#">Hébergements</a></li>
-            <li><a href="#">Activités</a></li>
+            <li class="top_barre"><a href="#">Hébergements</a></li>
+            <li class="top_barre"><a href="#">Activités</a></li>
             <li class="inscription"><a href="">S'incrire</a></li>
             </ul>
         </nav>
@@ -37,7 +38,7 @@
    <div id="zone_recherche">
     <i class="fas fa-map-marker-alt" id="icone"></i>
 	    <input id="texte_recherche" type="text" value="" placeholder="Marseille, France"/>
-	    <input id="bouton_recherche" type="button" value="Rechercher"/>
+	    <input id="bouton_recherche" type="submit" value="Rechercher"/>
    </div>
 
    <!-- Filtres -->
@@ -60,6 +61,7 @@
 
     <!--Section mid-page-->
 <section class="midpage">
+
     <!-- Hébergements disponibles -->
 
     <section class="hebergement">
