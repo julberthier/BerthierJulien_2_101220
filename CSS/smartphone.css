@@ -1,16 +1,12 @@
 * {
-    width: auto;
-    height: auto;
     font-family: 'Raleway', sans-serif;
-    box-sizing: border-box;
 }
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: auto;
-    height: auto;
+  
 }
 
 /* Hebergements */
@@ -23,7 +19,7 @@ body {
 
 /* activité à Marseille */
 
-section.activite {
+section.activite > * {
     height: 100%;
 }
 
@@ -31,7 +27,6 @@ div.activite_grid {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 50%;
 }
 
 .activite_box {   

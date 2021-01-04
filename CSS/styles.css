@@ -3,10 +3,15 @@
 /*CSS de la page*/
 
 * {
-    height: auto;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+
+    font-size: 62.5%;
+
 }
 
 body {
@@ -14,8 +19,8 @@ body {
 }
 
 section.page {
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
 }
 
 a {
@@ -41,21 +46,23 @@ body {
 }
 
 
+
+
 /* Tête de la page */
 section.top-page {
-    height: 10vh;
-    margin-top: 0;
+    height: 3.5rem;
 }
 
 header.header {
     display: flex;
     align-items:center;  
-    height: 50%;
-    margin-top: 2%;
+    justify-content: space-between;
+    height: 100%;
+    margin: 3rem 0 3rem 0;
 }
 
 header.header img {
-    width: 25%;
+    width: 11rem;
 }
 
 
@@ -66,16 +73,16 @@ nav.nav ul.navig {
     align-content: space-between;
     align-content: flex-end;
     list-style: none;
-    margin-left: 50%;
-    width: 350px;
-    position: absolute;
+    width: 38rem;
 }
 
 ul.navig {
     display: flex;
     justify-content: space-between;
     align-content: flex-end;
+    font-size: 1.7rem;
 }
+
 
 ul li.inscription {
     font-weight: 700;
@@ -98,17 +105,18 @@ nav li.inscription a {
 /* Titre de la page */
 
 .landing-page {
-    line-height: 20px;
+    line-height: 2rem;
+    margin-top: 3rem;
 }
 
 h1.titre1 {
     font-weight: 800;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .soustitre1 {
-font-weight: 500;
-font-size: 13px;
+    font-weight: 500;
+    font-size: 1.6rem;
 }
 
 
@@ -117,12 +125,11 @@ font-size: 13px;
 #zone_recherche {
     display: flex;
     border: 0.2px solid #F2F2F2;
-    width: 390px;
+    width: 31rem;
     border-radius: 10px;
-    margin-top: 2%;    
+    margin-top: 3rem;    
     font-weight: 700;
-    font-size: 14px;
-    margin-bottom: -3%;
+    font-size: 1.5rem;
 }
 
 #bouton_recherche {
@@ -132,18 +139,18 @@ font-size: 13px;
     border: 0px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    height: 35px;
-    width: 150px;
+    height: 3.2rem;
+    width: 10rem;
     outline-style:none;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 1.3rem;
     cursor: pointer;
 }
 
 #texte_recherche {
     border: 0px;
     font-weight: 800;
-    width: 250px;
+    width: 18rem;
     padding-left: 5px;
     text-align: center;
     outline-style:none;
@@ -157,8 +164,8 @@ input#texte_recherche
 #icone {
     display: flex;
     background-color: rgb(221, 221, 221);
-    height: 35px;
-    width: 50px;
+    height: 3.2rem;
+    width: 3.2rem;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     justify-content: center;
@@ -172,58 +179,52 @@ section.options {
     align-items: center;
     justify-content: space-between;
     font-weight: 700;
-    width: 45%;   
-    margin-top: 1.5%;
+    font-size: 1.5rem;
+    width: 100rem;  
+    height: 8rem; 
+    margin: 1.5rem;   
 }
 
 section.options div {
     display: flex;
-    margin: 3%;   
+    margin: 0.7rem;   
 }
 
 .icone_option {
-padding: 2%;
+    padding: 0.7rem;
 }
 
 .economique {
     border: 2px solid rgb(221, 221, 221);
-    margin: 10px;
-    padding: 10px;
-    padding-left: 50px;
-    padding-right: 15px;
-    border-radius: 50px;
+    margin: 1rem;
+    padding: 1rem 1.5rem 1rem 5rem;
+    border-radius: 5rem;
     transition: 0.4s all;
 }
 
 .familial {
     border: 2px solid rgb(221, 221, 221);
-    margin: 10px;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 15px;
-    border-radius: 50px;
+    margin: 1rem;
+    padding: 1rem 1.5rem 1rem 5rem;
+    border-radius: 5rem;
     transition: 0.4s all;
 }
 
 .love {
     border: 2px solid rgb(221, 221, 221);
-    margin: 10px;
-    padding: 10px;
-    padding-left: 50px;
-    padding-right: 15px;
-    border-radius: 50px;
+    margin: 1rem;
+    padding: 1rem 1.5rem 1rem 5rem;
+    border-radius: 5rem;
     transition: 0.4s all;
 }
 
 .dogs {
     border: 2px solid rgb(221, 221, 221);
-    margin: 10px;
-    padding: 10px;
-    padding-left: 50px;
-    padding-right: 15px;
-    border-radius: 50px;
-    width: 220px;
+    margin: 1rem;
+    padding: 1rem 1.5rem 1rem 5rem;
+    border-radius: 5rem;
     transition: 0.4s all;
+    width: 21rem;
 }
 
 /* Icones */
@@ -235,8 +236,9 @@ padding: 2%;
     color:#0065FC;
     background-color: #d0e2fc; 
     border-radius: 100%;
-    width: 60px;
-    transform: translateX(60px);      
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: translate(5.95rem, 0.25rem);    
 }
 
 .fa-child {
@@ -246,8 +248,9 @@ padding: 2%;
     color:#0065FC;
     background-color: #d0e2fc; 
     border-radius: 100%;
-    width: 60px;
-    transform: translateX(55px);      
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: translate(5.95rem, 0.25rem);   
 }
 
 .fa-heart {
@@ -257,8 +260,9 @@ padding: 2%;
     color:#0065FC;
     background-color: #d0e2fc; 
     border-radius: 100%;
-    width: 60px;
-    transform: translateX(60px);      
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: translate(5.95rem, 0.25rem);    
 }
 
 .fa-dog {
@@ -268,8 +272,9 @@ padding: 2%;
     color:#0065FC;
     background-color: #d0e2fc; 
     border-radius: 100%;
-    width: 60px;
-    transform: translateX(60px);  
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: translate(5.95rem, 0.25rem);  
 }
 
 .economique:hover {
@@ -297,9 +302,10 @@ padding: 2%;
 #infos {
     display: flex;
     justify-content: space-between;
-    width: 24%;
-    margin-top: -2%;
-    margin-bottom: 30px;
+    align-items: center;
+    width: 43rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
 }
 
 .info {
@@ -310,13 +316,13 @@ padding: 2%;
     font-weight: 800;
     border: 1px solid rgb(221, 221, 221);
     border-radius: 100%;
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .many {
-position: absolute;
-transform: translateX(40px);
+    position: absolute;
+    transform: translateX(4rem);
 }
 
 /* Section Mid page */
@@ -324,7 +330,7 @@ transform: translateX(40px);
 section.midpage {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /* Hebergements à Marseille */
@@ -332,213 +338,107 @@ section.midpage {
 .hebergement {    
     background-color: #F2F2F2;
     border-radius: 20px;   
-    padding: 2%;
-    width: 68%; 
-    margin-bottom: 10px;
+    padding: 1rem;
+    width: 125rem; 
+    margin-bottom: 1rem;
 }
     
 .titheb {
     font-weight: 800;
-    font-size: 24px;
-    margin-top: -20px;  
-    width: 27%;
-    height: 8%;  
-}
-
-.soustitre2 {    
-    font-weight: 700;
-    font-size: 18px;
-    transform: translate(0px, -30px);
-    position: absolute;
-}
-
-.soustitre2:hover{
-    color: #0065FC;
-}
-
-div.overlay {
-    background-color: #ffffff;
-    width: 345px;
-    height: 80px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    padding: 10px;
-    font-size: 12px;
-    font-weight: 600;
-    transform: translateY(135px);
+    font-size: 2.4rem;
+    width: 32rem;
+    margin-left: 1rem;
 }
 
 .desc {
     display: flex;
     flex-direction: column;
-    font-size: 18px;
+    font-size: 1.8rem;
     text-align: left;
 }
 
 .nuit {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .hebergement-images {   
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: (2, 300px);
-    margin-bottom: 50px;
-    margin-top: 10px;
-    column-gap: 30px;
-    row-gap: 15px;
-    margin-left: -8px;    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-left: -0.8rem;  
+    height: auto;
+    width: 120rem;
 }
 
-.Cannebiere { 
-    background: url(../images/hebergements/4_small/Auberge\ la\ Cannebiere.jpg);
-    height: 220px;
-    width: 350px;
-    border-radius: 20px;
-    margin: 10px;
-    background-size: cover; 
-    order: 1;
-    border: 4px solid #ffffff;
-    box-shadow: 0px 0px 10px gray;
+img.hebimg {
+    border-radius: 2rem;
+    border: 5px solid #ffffff;
+    box-shadow: 0px 0px 10px gray;    
     transition: 0.6s all;
-
+    height: 22rem;
+    width: 35rem;
+    margin: 1rem;
 }
 
-.Cannebiere:hover{
-    -webkit-transform: scale(1.1); 
-    -ms-transform: scale(1.1); 
+div.overlay {
+    background-color: #ffffff;
+    width: 34rem;
+    height: 8rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transform: translate(1.5rem, -9.5rem);
+    position: absolute;
+    padding: 1rem;
+}
+
+.hebimg:hover {   
     transform: scale(1.1);
     box-shadow: 0px 0px 25px black;
-    transition: 0.4s all;
-    background-size: 102%;
-    background-position: center;
+    transition: 0.4s all; 
+    border-radius: 20px;
 }
 
-.port {     
-    background: url(../images/hebergements/4_small/Hôtel\ du\ port.jpg);
-    height: 220px;
-    width: 350px;
-    border-radius: 20px;
-    margin: 10px;
-    background-size: cover;
-    order: 2;
-    border: 4px solid #ffffff;
-    box-shadow: 0px 0px 10px gray;
-    background-position-y: -50px;
-    transition: 0.6s all;
+.cannebiere:hover {  
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px black;
+    transition: 0.4s all; 
 }
 
 .port:hover{
-    -webkit-transform: scale(1.1); 
-    -ms-transform: scale(1.1); 
     transform: scale(1.1);
     box-shadow: 0px 0px 25px black;
-    transition: 0.4s all;
-    background-size: 102%;
-    background-position: center;
-    background-position-y: 315%;
-}
-
-.mouettes { 
-    background: url(../images/hebergements/4_small/Hôtel\ les\ mouettes.jpg);
-    height: 220px;
-    width: 350px;
-    border-radius: 20px;
-    margin: 10px;
-    background-size: cover;
-    order: 3;
-    border: 4px solid #ffffff;
-    box-shadow: 0px 0px 10px gray;
-    background-position-y: -65px;    
-    transition: 0.6s all;    
+    transition: 0.4s all; 
 }
 
 .mouettes:hover{
-    -webkit-transform: scale(1.1); 
-    -ms-transform: scale(1.1); 
     transform: scale(1.1);
     box-shadow: 0px 0px 25px black;
     transition: 0.4s all;
-    background-size: 102%;
-    background-position: center;
-    background-position-y: 280%;
-}
-
-.mer {
-    background: url(../images/hebergements/4_small/Hôtel\ de\ la\ mer.jpg);
-    height: 220px;
-    width: 350px;
-    border-radius: 20px;
-    margin: 10px;
-    background-size: cover;
-    order: 4;
-    border: 4px solid #ffffff;
-    box-shadow: 0px 0px 10px gray;
-    background-position-y: -110px;
-    transition: 0.6s all;
 }
 
 .mer:hover{
-    -webkit-transform: scale(1.1); 
-    -ms-transform: scale(1.1); 
     transform: scale(1.1);
     box-shadow: 0px 0px 25px black;
     transition: 0.4s all;
-    background-size: 102%;
-    background-position: center;
-    background-position-y: 111%;
 }
 
-.Panier {
-    background: url(../images/hebergements/4_small/Auberge\ Le\ Panier.jpg);
-    height: 220px;
-    width: 350px;
-    border-radius: 20px;
-    margin: 10px;
-    background-size: cover;
-    order: 5;
-    border: 4px solid #ffffff;
-    box-shadow: 0px 0px 10px gray;
-    background-position-x: -10px;
-    transition: 0.6s all;
-
-}
 
 .Panier:hover{
-    -webkit-transform: scale(1.1); 
-    -ms-transform: scale(1.1); 
     transform: scale(1.1);
     box-shadow: 0px 0px 25px black;
     transition: 0.4s all;
-    background-size: 112%;
-    background-position: center;
-    background-position-y: -15px;
-}
-
-.Amina { 
-    background: url(../images/hebergements/4_small/Hôtel\ chez\ Amina.jpg);
-    height: 220px;
-    width: 350px;
-    border-radius: 20px;
-    margin: 10px;
-    background-size: cover;
-    background-position-y: -245px;
-    order: 6;
-    border: 4px solid #ffffff;
-    box-shadow: 0px 0px 10px gray;
-    transition: 0.6s all;
 }
 
 .Amina:hover{
-    -webkit-transform: scale(1.1); 
-    -ms-transform: scale(1.1); 
     transform: scale(1.1);
     box-shadow: 0px 0px 25px black;
     transition: 0.4s all;
-    background-size: 102%;
-    background-position: center;
-    background-position-y: 75%;
 }
 
 .fa-star {
@@ -553,32 +453,55 @@ div.overlay {
     font-weight: 800;
 }
 
-/* Aside Les plus populaires */
+.soustitre2 {    
+    font-weight: 700;
+    font-size: 1.8rem;
+    transform: translate(1rem, 3rem);
+    position: absolute;
+}
+
+.soustitre2:hover{
+    color: #0065FC;
+}
+
+
+/* Les plus populaires */
 
 div.coté {   
-    width: 90%;
-    height: 99%;
+    width: 47rem;
     background-color: #F2F2F2;
     border-radius: 20px;  
-    margin-top: -3%; 
 }
 
 .popu { 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    margin-left: -30px;
-    height: 590px;
-    width: 550px;    
+    justify-content: space-between;
+    margin-left: -3rem;
+    height: 59rem;
+    width: 55rem;    
 }
 
 h3.titpopu {
     font-weight: 800;
-    font-size: 24px;
-    padding-left: 45px;
-    padding-top: 20px;
-    margin-top: 16px;
+    font-size: 2.4rem;
+    padding-left: 4.5rem;
+    padding-top: 2rem;
+    margin-top: 1.6rem;
+}
+
+div.topPopu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;   
+    height: 7rem;
+}
+
+.fa-chart-line {
+    font-size: 1.5rem;
+    margin: 0 35px;
 }
 
 .soleil { 
@@ -635,11 +558,6 @@ div.overlay2 {
     border-top: 5px solid #ffffff;
 }
 
-.fa-chart-line {  
-    transform: translate(420px, -610px);
-    position: absolute;
-}
-
 .desc2 {
     display: flex;
     justify-content: center;
@@ -658,7 +576,7 @@ transform: translate(15px, 35px);
     font-weight: 800;
 }
 
-/*Activité à Marseille */
+/*Activité à Marseille
 
 section.activite {
     display: flex;
@@ -670,7 +588,7 @@ section.activite {
 .activite_titre {
     font-weight: 800;
     font-size: 20px;
-    margin: 20px 0 20px 0;    
+    margin: 20px 0 20px 0;  
 }
 
 .activite_grid {
@@ -835,24 +753,163 @@ section.activite {
     box-shadow: 0px 0px 25px black;
     transition: 0.4s all;
 }
+*/
 
+/* Test activité */
+
+
+
+.activite_titre {
+    font-weight: 800;
+    font-size: 2rem;
+    margin: 20px 0 20px 0;  
+}
+
+.actitit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.activite_grid {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 75rem;
+}
+/* VIEUX PORT */
+
+div.vieuxport {
+    margin: 1rem;
+}
+
+img.activport {
+    height: 70rem;
+    width: 44rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px gray;
+    object-fit: cover;
+}
+
+/*MID ACTIV 1 */
+
+.midactv1 {
+    display: flex;
+    flex-direction: column;
+}
+
+div.fort {
+    margin: 1rem;
+}
+
+img.activfort {
+    height: 32rem;
+    width: 44rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px gray;
+    object-fit: cover;
+}
+
+div.frioul { 
+    margin: 1rem;
+}
+
+img.activfrioul {
+    height: 32rem;
+    width: 44rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px gray;
+    object-fit: cover;
+
+}
+
+/* CALANQUES */
+div.calanques {
+    margin: 1rem;
+}
+
+img.activcalanques {
+    height: 70rem;
+    width: 44rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px gray;
+    object-fit: cover;
+
+}
+
+/* MID ACTIV 2 */
+
+.midactv1 {
+    display: flex;
+    flex-direction: column;
+}
+
+div.NDG {
+    margin: 1rem;
+}
+
+img.activNDG {
+    height: 32rem;
+    width: 44rem;
+    border-radius: 20px; 
+    box-shadow: 0px 0px 10px gray;
+    object-fit: cover;
+
+}
+
+div.parc {
+    margin: 1rem;
+}
+
+img.activparc {
+    height: 32rem;
+    width: 44rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px gray;
+    object-fit: cover;
+
+}
+
+/* OVERLAY BOX */
+
+.activite_box {
+    background-color: #ffffff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transform: translateY(-50px);
+    height: 5rem;
+}
+
+.activite_box2 {
+    background-color: #ffffff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transform: translateY(-50px);
+    position: absolute;
+    width: 44rem;
+    height: 5rem;
+}
 
 /*Footer de la page*/
 
 footer.footer {
     display: flex;
     width: 100%;
-    height: 200px;
+    height: 20rem;
     justify-content: space-between;
     background-color: #F2F2F2;
 }
 
 .listbas {
-list-style: none;
+    list-style: none;
+    font-size: 1.5rem;
 }
 
 li.bold {
     font-weight: 700;
+    font-size: 2rem;
     margin-top: 20px;
     margin-bottom: 20px;
     cursor: pointer;
