@@ -2,10 +2,9 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia</title>
     <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/smartphone.css" media="(min-width: 1px) and (max-width: 991.98px)">
     <script src="https://kit.fontawesome.com/d3b50b27dc.js" crossorigin="anonymous"></script>
 </head>
 
@@ -24,7 +23,7 @@
             </ul>
         </nav>
     </header>
-</section>
+    </section>
 
 
     <!-- Titre de la page -->
@@ -46,22 +45,22 @@
    <section class="options">
       <div class="filtres">Filtres</div>     
       <div class="icone_option">  
-        <div class="billet"><div class="fas fa-money-bill-wave"></div> <!--billet icons--> <a href=""><p class="economique">Economique</p></a></div>
-        <div class="personne"><div class="fas fa-child"></div> <!--Personne icons--> <a href=""><p class="familial">Familial</p></a></div>
-        <div class="romantique"><div class="fas fa-heart"></div> <!--coeur icons--> <a href=""><p class="love">Romantique</p></a></div>
-       <div class="animaux"><div class="fas fa-dog"></div> <!--Chien icons--><a href=""><p class="dogs">Animaux autorisés</p></a></div>
+        <div class="billet"><i class="fas fa-money-bill-wave"></i> <!--billet icons--> <a href=""><p class="economique">Economique</p></a></div>
+        <div class="personne"><i class="fas fa-child"></i> <!--Personne icons--> <a href=""><p class="familial">Familial</p></a></div>
+        <div class="romantique"><i class="fas fa-heart"></i> <!--coeur icons--> <a href=""><p class="love">Romantique</p></a></div>
+       <div class="animaux"><i class="fas fa-dog"></i> <!--Chien icons--><a href=""><p class="dogs">Animaux autorisés</p></a></div>
        </div>
     </section>
 
     <!-- Informations disponibilité logements -->
     <div id="infos">
-        <span class="info">i</span>
+        <span class="info"><i class="fas fa-info"></i></span>
         <span class="many">Plus de 500 logements sont disponibles dans cette ville</span>
     </div>
 
     <!--Section mid-page-->
 
-<section class="midpage">
+    <section class="midpage">
 
     <!-- Hébergements disponibles -->
 
@@ -71,7 +70,7 @@
     <div class="hebergement-images">
         <!-- Hebergement 1 -->
         <div class="cannebiere">
-            <a href=""><img class="hebimg" src="images/hebergements/4_small/Auberge la Cannebiere.jpg"/>
+            <a href=""><img class="hebimg" src="images/hebergements/4_small/Auberge la Cannebiere.jpg" alt="Auberge la cannebiere"/>
                 <div class="overlay">
                 <span class="desc nom">Auberge la Cannebiere</span>
                 <span class="desc nuit">Nuit à partir de 25€</span>
@@ -85,7 +84,7 @@
 
         <!-- Hebergement 2 -->
         <div class="port">
-        <a href=""><img class="hebimg" src="images/hebergements/4_small/Hôtel du port.jpg"/>
+        <a href=""><img class="hebimg" src="images/hebergements/4_small/Hôtel du port.jpg" alt="Hôtel du port"/>
             <div class="overlay">
                 <span class="desc nom">Hôtel du port</span>
                 <span class="desc nuit">Nuit à partir de 52€</span>        
@@ -99,7 +98,7 @@
 
         <!-- Hebergement 3 -->
         <div class="mouettes">
-            <a href=""><img class="hebimg" src="images/hebergements/4_small/Hôtel les mouettes.jpg"/>
+            <a href=""><img class="hebimg" src="images/hebergements/4_small/Hôtel les mouettes.jpg" alt="Hôtel les mouettes"/>
                 <div class="overlay">
                 <span class="desc nom">Hôtel Les mouettes</span>
                 <span class="desc nuit">Nuit à partir de 76€</span>        
@@ -113,7 +112,7 @@
 
         <!-- Hebergement 4 -->
         <div class="mer">
-            <a href=""><img class="hebimg" src="images/hebergements/4_small/Hôtel de la mer.jpg"/>
+            <a href=""><img class="hebimg" src="images/hebergements/4_small/Hôtel de la mer.jpg" alt="Hôtel de la mer"/>
                 <div class="overlay">
                 <span class="desc nom">Hôtel de la mer</span>
                 <span class="desc nuit">Nuit à partir de 46€</span>        
@@ -127,7 +126,7 @@
 
         <!-- Hebergement 5 -->
         <div class="Panier">
-            <a href=""><img class="hebimg" src="images/hebergements/4_small/Auberge Le Panier.jpg"/>
+            <a href=""><img class="hebimg" src="images/hebergements/4_small/Auberge Le Panier.jpg" alt="Auberge le Panier"/>
                 <div class="overlay">
                 <span class="desc nom">Auberge Le Panier</span>
                 <span class="desc nuit">Nuit à partir de 23€</span>        
@@ -141,7 +140,7 @@
 
     <!-- Hebergement 6 -->
         <div class="Amina">
-            <a href=""><img class="hebimg" src="images/hebergements/4_small/Hôtel chez Amina.jpg"/>
+            <a href=""><img class="hebimg" src="images/hebergements/4_small/Hôtel chez Amina.jpg" alt="Hôtel chez Amina"/>
                 <div class="overlay">
                 <span class="desc nom">Hôtel chez Amina</span>
                 <span class="desc nuit">Nuit à partir de 96€</span>        
@@ -216,49 +215,49 @@
                 </div>        
 
         </div>  
-</section>
+    </section>
 
     <!-- Activité à Marseille -->
    <section class="activite">    
     <h3 class="activite_titre">Activités à Marseille</h3>
 
     <div class="activite_grid">
-    <div class="vieuxport">
-    <img class="activport" src="images/activites/3_medium/vieux_port.jpg"/>
-        <a class="grid_activite1"><p class="actitit activite_box2">Port</p></a>
+    <div class="vieuxport"><a href="" class="grid_activite1">
+    <img class="activport" src="images/activites/3_medium/vieux_port.jpg" alt="Vieux port de Marseille"/>
+        <p class="actitit activite_box2">Port</p></a>
     </div>
         
     <div class="midactv1">
-        <div class="fort">
-        <img class="activfort" src="images/activites/3_medium/fort_de_pomegues.jpg"/>
-        <a class="grid_activite2"><p class="actitit activite_box">Fort de Pomègues</p></a>
+        <div class="fort"><a href="" class="grid_activite2">
+        <img class="activfort" src="images/activites/3_medium/fort_de_pomegues.jpg" alt="Fort de Pomegues"/>
+        <p class="actitit activite_box">Fort de Pomègues</p></a>
     </div>
 
-    <div class="frioul">
-        <img class="activfrioul" src="images/activites/3_medium/iles_du_frioul.jpg"/>
-        <a class="grid_activite3"><p class="actitit activite_box">Iles du Frioul</p></a>
+    <div class="frioul"><a href="" class="grid_activite3">
+        <img class="activfrioul" src="images/activites/3_medium/iles_du_frioul.jpg" alt="Iles du Frioul"/>
+        <p class="actitit activite_box">Iles du Frioul</p></a>
     </div>
     </div>
-    <div class="calanques">
-        <img class="activcalanques" src="images/activites/3_medium/parc_national_des_calanques.jpg"/>
-        <a class="grid_activite4"><p class="actitit activite_box2">Parc national des Calanques</p></a>
+    <div class="calanques"><a href="" class="grid_activite4">
+        <img class="activcalanques" src="images/activites/3_medium/parc_national_des_calanques.jpg" alt="Parc national des calanques"/>
+        <p class="actitit activite_box2">Parc national des Calanques</p></a>
         </div>
 
-<div class="midactv1">
-        <div class="NDG">
-            <img class="activNDG" src="images/activites/3_medium/Notre_dame_de_la_garde.jpg"/>
-        <a class="grid_activite5"><p class="actitit activite_box">Notre dame de la garde</p></a>
+    <div class="midactv1">
+        <div class="NDG"><a href="" class="grid_activite5">
+            <img class="activNDG" src="images/activites/3_medium/Notre_dame_de_la_garde.jpg" alt="Notre dame de la garde"/>
+        <p class="actitit activite_box">Notre dame de la garde</p></a>
         </div>
 
-        <div class="parc">
-            <img class="activparc" src="images/activites/3_medium/parc_longchamp.jpg"/>
-        <a class="grid_activite6"><p class="actitit activite_box">Parc longchamp</p></a>
+        <div class="parc"><a href="" class="grid_activite6">
+            <img class="activparc" src="images/activites/3_medium/parc_longchamp.jpg" alt="Parc Longchamp"/>
+        <p class="actitit activite_box">Parc longchamp</p></a>
             </div>
             </div>
     </div>
 
 
-   </section>
+    </section>
 </section>
 
    <!-- Footer de la page -->
