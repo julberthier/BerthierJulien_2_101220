@@ -6,13 +6,14 @@
 /*CSS de la page*/
 
 * {
-  margin: 0;
+  margin: 0 0 0 0;
   box-sizing: border-box;
 }
 
 hmtl,
 body {
   font-size: 16px;
+
 }
 
 body {
@@ -37,7 +38,7 @@ a:hover {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 767px) {
   body {
     display: block;
     justify-content: center;
@@ -45,45 +46,105 @@ a:hover {
 
   html {
     margin: 0 0 0 0;
+  }  
+  
+  .infos {
+    margin-bottom: 15px;
   }
 
-  .infos {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100vw;
-    font-size: 0.8em;
-    margin-left: -35px;
+  #filtres {
+    margin: 5px 0 0px -320px;
+    }
+
+  #midpage {
+    height: 100% !important;
+    margin-bottom: 35px !important;
   }
 
   section.hebergement {
     background: none;
+    order: 2;
   }
 
-  section.options {
-    width: 100vw !important;
+  #soustitre2 {
+    margin: 15px 0 0px -25px;
   }
+
+  #coté {
+    order: 1;
+    margin: 0 -40px 0 -40px;
+    border-radius: 0 !important;
+    padding-bottom: 30px;
+    width: 800px !important;
+  }
+
+  .overlay2 {
+  width: 33% !important;
+  transform: translate(205%, -5px) !important;
+  }
+
+  #nom1 {
+  margin-left: 0 !important;
+
+  }
+
+  #activite_grid {
+    justify-content: center !important;
+    margin: auto;
+  }
+
+  #calanques {
+    margin-top: -40px;
+  }  
+
+ .activcalanques, .activport {
+   height: 350px !important;
+ }
 
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1804px){
+
+  #navig {
+    width: unset !important;
+  }
+
+  #midpage{
+    height: unset !important;
+  }
+
+  .hebergement {
+    width: unset !important;
+  }
+
+  #soustitre2 {
+    font-size: 1em !important;
+    transform: translate(15px, -13px) !important;
+  }
+}
 /* Tête de la page */
 
-header.header {
+#header {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
   height: 100%;
-  margin: 0 0 30px 0;
+  width: 100%;
 }
 
-header.header img {
+#header img {
   width: 90px;
   height: 45px;
   margin: 0 0 -10px;
 }
 
+#top_page {
+  width: 100%;
+}
+
+
 /* menu  de navigation */
 
-ul.navig {
+#navig {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -94,12 +155,16 @@ ul.navig {
   margin-left: 68vw;
 }
 
+.top_barre {
+  margin: 0 5px 0 5px;
+}
+
 li.top_barre:hover {
   border-top: 2px solid #0065fc;
   padding-top: 26px;
 }
 
-p.inscription {
+#inscription {
   font-weight: 700;
   text-decoration: none;
   color: #0065fc;
@@ -115,23 +180,23 @@ li :hover {
   transition: 0.4s all;
 }
 
-p.inscription a {
+#inscription a {
   color: #0065fc;
 }
 
 /* Titre de la page */
 
-.landing-page {
+#landing-page {
   line-height: 1.5em;
   margin-top: 30px;
 }
 
-h1.titre1 {
+#titre1 {
   font-weight: 800;
   font-size: 1.5em;
 }
 
-.soustitre1 {
+#soustitre1 {
   font-weight: 500;
   font-size: 0.8em;
 }
@@ -194,7 +259,6 @@ section.options {
   font-weight: 700;
   font-size: 0.95em;
   width: 70vw;
-  height: 10vh;
   margin: 10px 0 10px 0;
 }
 
@@ -203,11 +267,11 @@ section.options div {
   flex-wrap: wrap;
 }
 
-.icone_option {
+#icone_option {
   padding: 10px;
 }
 
-.economique {
+.libelle {
   border: 2px solid rgb(221, 221, 221);
   margin: 10px;
   padding: 10px 15px 10px 50px;
@@ -215,23 +279,7 @@ section.options div {
   transition: 0.4s all;
 }
 
-.familial {
-  border: 2px solid rgb(221, 221, 221);
-  margin: 10px;
-  padding: 10px 15px 10px 50px;
-  border-radius: 50px;
-  transition: 0.4s all;
-}
-
-.love {
-  border: 2px solid rgb(221, 221, 221);
-  margin: 10px;
-  padding: 10px 15px 10px 50px;
-  border-radius: 50px;
-  transition: 0.4s all;
-}
-
-.dogs {
+#dogs {
   border: 2px solid rgb(221, 221, 221);
   margin: 10px;
   padding: 10px 15px 10px 50px;
@@ -290,22 +338,12 @@ i.fa-dog {
   transform: translate(50px, 9.5px);
 }
 
-.economique:hover {
+.libelle:hover {
   border: solid 3px #0065fc;
   transition: 0.2s all;
 }
 
-.familial:hover {
-  border: solid 3px #0065fc;
-  transition: 0.2s all;
-}
-
-.love:hover {
-  border: solid 3px #0065fc;
-  transition: 0.2s all;
-}
-
-.dogs:hover {
+#dogs:hover {
   border: solid 3px #0065fc;
   transition: 0.2s all;
 }
@@ -314,10 +352,9 @@ i.fa-dog {
 
 .infos {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
-  width: 24vw;
-  margin-bottom: 30px;
+  width: 80vw;
   font-size: 0.9em;
 }
 
@@ -331,6 +368,7 @@ i.fa-dog {
   border-radius: 50px;
   width: 20px;
   height: 20px;
+  margin-right: 8px;
 }
 
 i.fa-info {
@@ -339,10 +377,14 @@ i.fa-info {
 
 /* Section Mid page */
 
-section.midpage {
+#midpage {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  width: 100%;
+  height: 691px;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 /* Hebergements à Marseille */
@@ -351,9 +393,9 @@ section.midpage {
   background-color: #f2f2f2;
   border-radius: 20px;
   padding: 10px;
-  width: 67%;
-  height: 80%;
-  margin: 0 15px 15px 15px;
+  width: 1228px;
+  height: 100%;
+  margin: 15px 0 15px 0;
 }
 
 .titheb {
@@ -380,8 +422,8 @@ section.midpage {
   justify-content: space-around;
   flex-wrap: wrap;
   align-content: space-around;
-  margin-bottom: 5px;
-  height: 75%;
+  margin: 25px 0 0 0;
+  height: 80%;
   width: 100%;
 }
 
@@ -395,7 +437,7 @@ img.hebimg {
   margin: 1rem;
 }
 
-div.overlay {
+figcaption.overlay {
   background-color: #ffffff;
   width: 345px;
   height: 90px;
@@ -409,39 +451,9 @@ div.overlay {
 }
 
 .hebimg:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: 0.4s all;
   border-radius: 20px;
-}
-
-.cannebiere:hover {
-  transform: scale(1.1);
-  transition: 0.4s all;
-}
-
-.port:hover {
-  transform: scale(1.1);
-  transition: 0.4s all;
-}
-
-.mouettes:hover {
-  transform: scale(1.1);
-  transition: 0.4s all;
-}
-
-.mer:hover {
-  transform: scale(1.1);
-  transition: 0.4s all;
-}
-
-.Panier:hover {
-  transform: scale(1.1);
-  transition: 0.4s all;
-}
-
-.Amina:hover {
-  transform: scale(1.1);
-  transition: 0.4s all;
 }
 
 .blue {
@@ -456,35 +468,36 @@ div.overlay {
   font-weight: 800;
 }
 
-.soustitre2 {
+#soustitre2 {
   font-weight: 700;
-  font-size: 1em;
-  transform: translate(10px, -15px);
+  font-size: 1.2em;
+  transform: translate(15px, 0);
   position: absolute;
 }
 
-.soustitre2:hover {
+#soustitre2:hover {
   color: #0065fc;
 }
 
-/* Les plus populaires */
+/*...
+ Les plus populaires
+ ... */
 
-div.coté {
-  max-width: 100%;
-  min-width: 30%;
+#coté {
+  width: 487.5px;
   background-color: #f2f2f2;
   border-radius: 20px;
+  height: 100%;
 }
 
-.popu {
+#popu {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 80%;
 }
 
-h3.titpopu {
+h3#titpopu {
   font-weight: 800;
   font-size: 1.5em;
   padding-left: 45px;
@@ -493,7 +506,7 @@ h3.titpopu {
   margin-bottom: 20px;
 }
 
-div.topPopu {
+div#topPopu {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -507,12 +520,12 @@ div.topPopu {
   padding-top: 10px;
 }
 
-.soleil {
+#soleil {
   background: url(../images/hebergements/4_small/Hôtel\ le\ soleil\ du\ matin.jpg);
   height: 160px;
-  width: 390px;
+  width: 80%;
   border-radius: 20px;
-  margin: 2px;
+  margin: 10px;
   background-size: 100%;
   border: 5px solid #ffffff;
   box-shadow: 0px 0px 10px gray;
@@ -520,12 +533,12 @@ div.topPopu {
   background-position-x: -50px;
 }
 
-.coeur_eau {
+#coeur_eau {
   background: url(../images/hebergements/4_small/Au\ coeur\ de\ l_eau.jpg);
   height: 160px;
-  width: 390px;
+  width: 80%;
   border-radius: 20px;
-  margin: 2px;
+  margin: 10px;
   background-size: 100%;
   border: 5px solid #ffffff;
   box-shadow: 0px 0px 10px gray;
@@ -534,12 +547,12 @@ div.topPopu {
   background-position-x: -50px;
 }
 
-.bleu_blanc {
+#bleu_blanc {
   background: url(../images/hebergements/4_small/Hôtel\ Tout\ bleu\ et\ blanc.jpg);
   height: 160px;
-  width: 390px;
+  width: 80%;
   border-radius: 20px;
-  margin: 2px;
+  margin: 10px;
   background-size: 100%;
   border: 5px solid #ffffff;
   box-shadow: 0px 0px 10px gray;
@@ -574,14 +587,16 @@ div.overlay2 {
   transform: translate(15px, 35px);
 }
 
-.nom1 {
+#nom1 {
   margin-left: -18px;
   font-weight: 800;
 }
 
-/* Test activité */
+/* ...
+                Activité
+... */
 
-section.activite {
+section#activite {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -594,7 +609,7 @@ section.activite {
   margin: 20px 0 20px 0;
 }
 
-div.activite_grid {
+#activite_grid {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -668,14 +683,14 @@ img.activNDG {
   object-fit: cover;
 }
 
-
-
 img.activparc {
   height: 350px;
   width: 100%;
   border-radius: 20px;
   box-shadow: 0px 0px 10px gray;
   object-fit: cover;
+  transition: .3s ease-in-out;
+  opacity: 1;
 }
 
 /* OVERLAY BOX */
