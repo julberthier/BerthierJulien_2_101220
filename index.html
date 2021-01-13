@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content=""/>
+    <meta name="description" content="Reservia est le site de reservation d'hébergement pour vos vacances de rêves n°1."/>
     <title>Reservia</title>
     <link rel="icon" type="image/png" href="images/logo/Reservia.svg" />
     <link rel="stylesheet" href="CSS/styles.css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
   </head>
 
   <body>
@@ -18,20 +17,23 @@
 
       <!-- Header de la page -->
 
-      <section id="top-page">
-        <header id="header">
+      
+        <header id="container_header">
+          
           <a href="index.html"><img src="images/logo/Reservia@3x.png" alt="logo du site Reservia"/></a>
+          
 
-          <nav>
             <ul id="navig">
               <li class="top_barre"><a href="#">Hébergements</a></li>
               <li class="top_barre"><a href="#">Activités</a></li>              
             </ul>
-          </nav>
-          <p id="inscription"><a href="">S'incrire</a></p>
+          
 
+          <a href="" id="subscribe">S'incrire</a>
+
+          
         </header>
-      </section>
+
 
       <!-- Titre de la page -->
 
@@ -44,7 +46,7 @@
 
       <!-- Barre de recherche -->
 
-<form action="index.html" method="GET">
+<form action="index.html" method="GET" id="searchbar">
       <div id="zone_recherche">
         <i class="fas fa-map-marker-alt" id="icone"></i>
         <input
@@ -57,37 +59,43 @@
 </form>
       <!-- Filtres -->
 
-      <section class="options">
+      <section id="options">
         <div id="filtres">Filtres</div>
+
         <div id="icone_option">
+
           <div>
-            <i class="fas fa-money-bill-wave"></i>
+            <i class="fas fa-money-bill-wave iconebleu"></i>
             <!--billet icons-->
             <a href=""><p class="libelle">Economique</p></a>
           </div>
+
           <div>
-            <i class="fas fa-child"></i>
+            <i class="fas fa-child iconebleu"></i>
             <!--Personne icons-->
             <a href=""><p class="libelle">Familial</p></a>
           </div>
+
           <div>
-            <i class="fas fa-heart"></i>
+            <i class="fas fa-heart iconebleu"></i>
             <!--coeur icons-->
-            <a href=""><p class="libelle">Romantique</p></a>
+            <a href=""><p class="libelle ">Romantique</p></a>
           </div>
-          <div>
-            <i class="fas fa-dog"></i>
-            <!--Chien icons--><a href=""
-              ><p id="dogs">Animaux autorisés</p></a
+
+          <div>         
+            <i class="fas fa-dog iconebleu"></i>   
+            <!--Chien icons-->
+            <a href=""><p id="dogs">Animaux autorisés</p></a
             >
           </div>
+
         </div>
       </section>
 
       <!-- Informations disponibilité logements -->
-      <div class="infos">
-        <span class="info"><i class="fas fa-info"></i></span>
-        <span class="many">Plus de 500 logements sont disponibles dans cette ville</span>
+      <div id="infos">
+        <span id="info"><i class="fas fa-info"></i></span>
+        <span>Plus de 500 logements sont disponibles dans cette ville</span>
       </div>
 
       <!--Section mid-page-->
@@ -95,10 +103,10 @@
       <section id="midpage">
         <!-- Hébergements disponibles -->
 
-        <section class="hebergement">
-          <h2 class="titheb">Hébergements à Marseille</h2>
+        <section id="hebergement">
+          <h2 id="titheb">Hébergements à Marseille</h2>
 
-          <div class="hebergement-images">
+          <div id="hebergement-images">
             <!-- Hebergement 1 -->
             <figure>
               <a href=""
@@ -340,7 +348,7 @@
 
       <!-- Activité à Marseille -->
       <section id="activite">
-        <h3 class="activite_titre">Activités à Marseille</h3>
+        <h3 id="activite_titre">Activités à Marseille</h3>
 
         <div id="activite_grid">
 
@@ -419,8 +427,8 @@
     </section>
 
     <!-- Footer de la page -->
-    <footer class="footer">
-      <section class="conteneur">
+    <footer id="footer">
+      <section id="conteneur">
 
         <div>
           <ul class="listbas">
