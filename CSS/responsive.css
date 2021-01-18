@@ -1,0 +1,50 @@
+/* MEDIA QUERIES */
+     
+  @media (min-width: 768px) and (max-width: 1804px) {
+    #navig {
+      width: auto;
+    }
+  
+    #container_header {
+      width: 95%;
+      max-width: 1700px;
+    }
+
+    #options {
+      width: auto !important;
+    }
+  
+    #searchbar {
+      display: flex;
+      justify-content: center;
+    }
+  
+    #midpage {
+      height: 100%;
+    }
+  
+    .libelle {
+      font-size: 0.9em;
+    }
+  
+    #dogs {
+      font-size: 0.9em;
+    }
+  
+    #hebergement {
+      width: 100%;
+    }
+
+    #coté {
+      padding-bottom: 30px;
+    }
+  
+    #soustitre2 {
+      font-size: 1em;
+      transform: translate(15px, -13px);
+    }
+  
+    #activite_grid {
+      justify-content: center;
+    }
+}

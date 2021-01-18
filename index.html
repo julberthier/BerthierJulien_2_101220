@@ -4,15 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Reservia est le site de reservation d'hébergement pour vos vacances de rêves n°1."/>
-    <title>Reservia</title>
+    <title>Reservia | Le site de réservation</title>
     <link rel="icon" type="image/png" href="images/logo/Reservia.svg" />
     <link rel="stylesheet" href="CSS/styles.css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="CSS/responsive.css" media="(max-width: 1804px)" />
+    <link rel="stylesheet" href="CSS/small.css" media="(max-width: 467px)" />
+    <link rel="stylesheet" href="CSS/medium.css" media="(max-width: 767px)" />
+    <link rel="stylesheet" href="CSS/large.css" media="(max-width: 1290px)" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
   </head>
 
   <body>
 
-    <section id="page">
+    <div>
 
 
       <!-- Header de la page -->
@@ -22,14 +26,14 @@
           
           <a href="index.html"><img src="images/logo/Reservia@3x.png" alt="logo du site Reservia"/></a>
           
+          <nav id="menu">
+          <ul id="navig">
+            <li class="top_barre"><a href="#">Hébergements</a></li>
+            <li class="top_barre"><a href="#">Activités</a></li>
+          </ul>           
+          </nav>
 
-            <ul id="navig">
-              <li class="top_barre"><a href="#">Hébergements</a></li>
-              <li class="top_barre"><a href="#">Activités</a></li>              
-            </ul>
-          
-
-          <a href="" id="subscribe">S'incrire</a>
+          <a href="404.html" id="subscribe">S'incrire</a>
 
           
         </header>
@@ -46,7 +50,7 @@
 
       <!-- Barre de recherche -->
 
-<form action="index.html" method="GET" id="searchbar">
+      <form action="index.html" method="GET" id="searchbar">
       <div id="zone_recherche">
         <i class="fas fa-map-marker-alt" id="icone"></i>
         <input
@@ -54,12 +58,15 @@
           type="text"
           value=""
           placeholder="Marseille, France">
-        <input id="bouton_recherche" type="submit" value="Rechercher">
+        <button id="bouton_recherche" type="submit" value="">
+        <span>Rechercher</span>
+        <i class="fas fa-search"></i>
+      </button>
       </div>
-</form>
+      </form>
       <!-- Filtres -->
 
-      <section id="options">
+      <div id="options">
         <div id="filtres">Filtres</div>
 
         <div id="icone_option">
@@ -90,7 +97,7 @@
           </div>
 
         </div>
-      </section>
+      </div>
 
       <!-- Informations disponibilité logements -->
       <div id="infos">
@@ -100,24 +107,24 @@
 
       <!--Section mid-page-->
 
-      <section id="midpage">
+      <div id="midpage">
         <!-- Hébergements disponibles -->
 
         <section id="hebergement">
           <h2 id="titheb">Hébergements à Marseille</h2>
 
           <div id="hebergement-images">
-            <!-- Hebergement 1 -->
-            <figure>
+
+            <!-- Hebergement 1 -->            
               <a href=""
                 ><img
                   class="hebimg"
-                  src="images/hebergements/4_small/Auberge la Cannebiere.jpg"
+                  src="images/hebergements/4_small/Auberge_la_Cannebiere.jpg"
                   alt="Auberge la cannebiere"
-                />
+                /><figure>
                 <figcaption class="overlay">
                   <span class="desc nom">Auberge la Cannebiere</span>
-                  <span class="desc nuit">Nuit à partir de 25€</span>
+                  <span class="desc nuit">Nuit à partir de 25<strong>€</strong></span>
                   <i class="fas fa-star blue"></i>
                   <!--etoiles icons-->
                   <i class="fas fa-star blue"></i>
@@ -128,21 +135,20 @@
                   <!--etoiles icons-->
                   <i class="fas fa-star gris"></i>
                   <!--etoiles icons-->
-                </figcaption></a
-              >
-            </figure>
+                </figcaption>
+            </figure></a>
 
-            <!-- Hebergement 2 -->
-            <figure>
+            <!-- Hebergement 2 -->            
               <a href=""
-                ><img
+                >
+                <img
                   class="hebimg"
-                  src="images/hebergements/4_small/Hôtel du port.jpg"
+                  src="images/hebergements/4_small/Hôtel_du_port.jpg"
                   alt="Hôtel du port"
                 />
                 <figcaption class="overlay">
                   <span class="desc nom">Hôtel du port</span>
-                  <span class="desc nuit">Nuit à partir de 52€</span>
+                  <span class="desc nuit">Nuit à partir de 52<strong>€</strong></span>
                   <i class="fas fa-star blue"></i>
                   <!--etoiles icons-->
                   <i class="fas fa-star blue"></i>
@@ -153,20 +159,20 @@
                   <!--etoiles icons-->
                   <i class="fas fa-star blue"></i>
                   <!--etoiles icons-->
-                </figcaption></a></figure>
-            </figure>
+                </figcaption>
+            </figure></a>
 
             <!-- Hebergement 3 -->
-            <figure>
+           
               <a href=""
                 ><img
                   class="hebimg"
-                  src="images/hebergements/4_small/Hôtel les mouettes.jpg"
+                  src="images/hebergements/4_small/Hôtel_les_mouettes.jpg"
                   alt="Hôtel les mouettes"
-                />
+                /><figure>
                 <figcaption class="overlay">
                   <span class="desc nom">Hôtel Les mouettes</span>
-                  <span class="desc nuit">Nuit à partir de 76€</span>
+                  <span class="desc nuit">Nuit à partir de 76<strong>€</strong></span>
                   <i class="fas fa-star blue"></i>
                   <!--etoiles icons-->
                   <i class="fas fa-star blue"></i>
@@ -177,22 +183,21 @@
                   <!--etoiles icons-->
                   <i class="fas fa-star gris"></i>
                   <!--etoiles icons-->
-                </figcaption></a
-              >
-            </figure>
+                </figcaption>
+            </figure></a>
 
             <!-- Hebergement 4 -->
-            <figure>
+           
               <a href=""
                 ><img
                   class="hebimg"
-                  src="images/hebergements/4_small/Hôtel de la mer.jpg"
+                  src="images/hebergements/4_small/Hôtel_de_la_mer.jpg"
                   alt="Hôtel de la mer"
-                />
+                /> <figure>
                 <figcaption class="overlay">
                   
                   <span class="desc nom">Hôtel de la mer</span>
-                  <span class="desc nuit">Nuit à partir de 46€</span>
+                  <span class="desc nuit">Nuit à partir de 46<strong>€</strong></span>
                   <i class="fas fa-star blue" ></i>
                   <!--etoiles icons-->
                   <i class="fas fa-star blue"></i>
@@ -203,22 +208,19 @@
                   <!--etoiles icons-->
                   <i class="fas fa-star gris"></i>
                   <!--etoiles icons-->
-                </figcaption></a
-              >
-            </figure>
-
+                </figcaption>
+            </figure></a>
             <!-- Hebergement 5 -->
-            <figure>
+            
               <a href=""
                 ><img
                   class="hebimg"
-                  src="images/hebergements/4_small/Auberge Le Panier.jpg"
+                  src="images/hebergements/4_small/Auberge_Le_Panier.jpg"
                   alt="Auberge le Panier"
-                />
-                <figcaption class="overlay">
-                  
+                /><figure>
+                <figcaption class="overlay">                  
                   <span class="desc nom">Auberge Le Panier</span>
-                  <span class="desc nuit">Nuit à partir de 23€</span>
+                  <span class="desc nuit">Nuit à partir de 23<strong>€</strong></span>
                   <i class="fas fa-star blue"></i>
                   <!--etoiles icons-->
                   <i class="fas fa-star blue"></i>
@@ -229,22 +231,20 @@
                   <!--etoiles icons-->
                   <i class="fas fa-star gris"></i>
                   <!--etoiles icons-->
-                </figcaption></a
-              >
-            </figure>
+                </figcaption>
+                    </figure></a>
 
             <!-- Hebergement 6 -->
-            <figure>
-
+            
               <a href=""
                 ><img
                   class="hebimg"
-                  src="images/hebergements/4_small/Hôtel chez Amina.jpg"
+                  src="images/hebergements/4_small/Hôtel_chez_Amina.jpg"
                   alt="Hôtel chez Amina"
-                />
+                /><figure>
                 <figcaption class="overlay">
                   <span class="desc nom">Hôtel chez Amina</span>
-                  <span class="desc nuit">Nuit à partir de 96€</span>
+                  <span class="desc nuit">Nuit à partir de 96<strong>€</strong></span>
                   <i class="fas fa-star blue"></i>
                   <!--etoiles icons-->
                   <i class="fas fa-star blue"></i>
@@ -255,15 +255,14 @@
                   <!--etoiles icons-->
                   <i class="fas fa-star blue"></i>
                   <!--etoiles icons-->
-                </figcaption></a
-              >
-            </figure>
+                </figcaption>
+            </figure></a>
           </div>
           <p><a href="" id="soustitre2">Afficher plus</a></p>
         </section>
 
         <!-- Hébergement populaire -->
-        <div id="coté">
+        <section id="coté">
           <div id="topPopu">
             <h3 id="titpopu">Les plus populaires</h3>
             <i class="fas fa-chart-line"></i>
@@ -271,14 +270,18 @@
           </div>
 
           <div id="popu">
-            <div id="soleil">
-              <a href="">
-                <div class="overlay2">
-                  <p class="desc2" id="nom1">
+
+            <div class="container_popu">
+              <a href=""><figure class="figurepop">
+                <img src="images/hebergements/4_small/Hôtel_le_soleil_du_matin.jpg"
+                alt="Hôtel Le soleil du matin"
+                id="soleil"/>
+                <figcaption class="overlay2">
+                  <p id="nom1">
                     Hôtel Le soleil du<br />
                     matin
                   </p>
-                  <p class="desc2 nuit">Nuit à partir de 128€</p>
+                  <p class="nuit2">Nuit à partir de 128<strong>€</strong></p>
                   <div class="stars">
                     <i class="fas fa-star blue"></i>
                     <!--etoiles icons-->
@@ -291,18 +294,23 @@
                     <i class="fas fa-star blue"></i>
                     <!--etoiles icons-->
                   </div>
-                </div>
+                </figcaption></figure>
               </a>
             </div>
 
-            <div id="coeur_eau">
-              <a href="">
-                <div class="overlay2">
-                  <p class="desc2 nom">
+            <div class="container_popu">
+              <a href=""><figure class="figurepop">
+                <img
+                src="images/hebergements/4_small/Au_coeur_de_l_eau.jpg"
+                alt="Au coeur de l'eau"
+                id="coeur_eau"
+              />
+                <figcaption class="overlay2">
+                  <p class="nom">
                     Au coeur de l'eau<br />
                     Chambres d'hôtes
                   </p>
-                  <p class="desc2 nuit">Nuit à partir de 71€</p>
+                  <p class="nuit2">Nuit à partir de 71<strong>€</strong></p>
                   <div class="stars">
                     <i class="fas fa-star blue"></i>
                     <!--etoiles icons-->
@@ -315,18 +323,23 @@
                     <i class="fas fa-star gris"></i>
                     <!--etoiles icons-->
                   </div>
-                </div>
+                </figcaption></figure>
               </a>
             </div>
 
-            <div id="bleu_blanc">
-              <a href="">
-                <div class="overlay2">
-                  <p class="desc2 nom">
+            <div class="container_popu">
+              <a href=""><figure class="figurepop">
+                <img
+                src="images/hebergements/4_small/Hôtel_Tout_bleu_et_blanc.jpg"
+                alt="Hôtel Tout bleu et Blanc"
+                id="bleu_blanc"
+              />
+                <figcaption class="overlay2">
+                  <p class="nom">
                     Hôtel Tout bleu et<br />
                     Blanc
                   </p>
-                  <p class="desc2 nuit">Nuit à partir de 68€</p>
+                  <p class="nuit2">Nuit à partir de 68<strong>€</strong></p>
                   <div class="stars">
                     <i class="fas fa-star blue"></i>
                     <!--etoiles icons-->
@@ -339,12 +352,12 @@
                     <i class="fas fa-star gris"></i>
                     <!--etoiles icons-->
                   </div>
-                </div>
+                </figcaption></figure>
               </a>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <!-- Activité à Marseille -->
       <section id="activite">
@@ -359,7 +372,7 @@
                 src="images/activites/3_medium/vieux_port.jpg"
                 alt="Vieux port de Marseille"
               />
-              <p class="actitit activite_box2">Port</p></a
+              <p class="actitit activite_box2">Vieux Port</p></a
             >
           </div>
 
@@ -382,7 +395,7 @@
                   src="images/activites/3_medium/iles_du_frioul.jpg"
                   alt="Iles du Frioul"
                 />
-                <p class="actitit activite_box">Iles du Frioul</p></a
+                <p class="actitit activite_box">Îles du Frioul</p></a
               >
             </div>
             </div>
@@ -395,7 +408,7 @@
                 alt="Parc national des calanques"
               />
               <p class="actitit activite_box2">
-                Parc national des Calanques
+                Parc National des Calanques
               </p></a>
           </div>
 
@@ -407,7 +420,7 @@
                   src="images/activites/3_medium/Notre_dame_de_la_garde.jpg"
                   alt="Notre dame de la garde"
                 />
-                <p class="actitit activite_box">Notre dame de la garde</p></a
+                <p class="actitit activite_box">Notre-Dame-de-la-Garde</p></a
               >
             </div>
 
@@ -418,17 +431,17 @@
                   src="images/activites/3_medium/parc_longchamp.jpg"
                   alt="Parc Longchamp"
                 />
-                <p class="actitit activite_box">Parc longchamp</p></a>
+                <p class="actitit activite_box">Parc Longchamp</p></a>
             </div>
 
           </div>
         </div>
       </section>
-    </section>
+    </div>
 
     <!-- Footer de la page -->
     <footer id="footer">
-      <section id="conteneur">
+      <div id="conteneur">
 
         <div>
           <ul class="listbas">
@@ -455,7 +468,7 @@
           </ul>
         </div>
 
-      </section>
+      </div>
     </footer>
   </body>
 </html>

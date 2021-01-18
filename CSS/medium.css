@@ -1,0 +1,104 @@
+@media (max-width: 767px) {
+
+    html {
+      margin: 0 0 0 0;
+    }
+  
+    #container_header {
+      width: 100%;
+      max-width: 720px;
+    } 
+
+    .top_barre {
+      margin: 0 10px 0 10px;
+    }
+
+    #menu {
+      margin-right: 10px;
+    }
+  
+    #titre1 {
+      font-size: 1.2em;
+    }
+  
+    #searchbar {
+      display: flex;
+      justify-content: center;
+    }
+
+    #zone_recherche {
+      width: auto;
+    }
+
+    #bouton_recherche span {
+    display: none;
+    }
+
+    #bouton_recherche i {
+      display: inline-block;
+    }
+  
+    #infos {
+      margin-bottom: 15px;
+    }
+  
+    #filtres {
+      margin: 5px 0 0px 0px;
+    }
+  
+    #midpage {
+      height: 100%;
+      margin-bottom: 35px;
+    }
+  
+    section#hebergement {
+      background: none;
+      order: 2;
+    }
+  
+    #soustitre2 {
+      margin: 15px 0 0px -25px;
+    }
+  
+    #coté {
+      order: 1;
+      border-radius: 0;
+      padding-bottom: 30px;
+      width: 800px;
+    } 
+  
+    .overlay2 {
+      width: 33% !important;
+      transform: translate(166%, -174px) !important;
+      font-size: 0.85em;
+    }
+  
+    .stars {
+      font-size: 0.7rem;
+      transform: none;
+    }
+  
+    #nom1 {
+      margin-left: 0;
+    }  
+  
+    #activite_grid {
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    #calanques {
+      margin-top: -40px;
+    }
+  
+    img.activport {
+      height: 350px;
+      width: 100%;
+    }
+
+    img.activcalanques {
+      height: 350px;
+      width: 100%;
+    }
+  }
