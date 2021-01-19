@@ -8,16 +8,16 @@
     #subscribe {
       order: 2;   
       position: absolute;
-      top: 20px; 
+      top: 43px; 
       right: 10px;}  
 
     #menu {
       order: 3;
-      padding-top: 15px;
+      padding-top: 35px;
       padding-bottom: 10px;  
       width: 100%;
       display: flex;
-      margin-right: 0px;
+      margin-right: 0 !important;
       justify-content: center;
       font-size: 1.2em;
       border-bottom: 2px solid gray;
@@ -25,22 +25,44 @@
   
   .top_barre {
     margin: 0 15px 0 15px;
-  }  
+}  
 
  .top_barre:hover {
       border-top: none;
       padding-top: 0;
       padding-bottom: 10px;
       border-bottom: 2px solid #0065fc;
-  }
+    }
 
 #searchbar {
   margin-left: 0px;
 }
 
+#zone_recherche{
+  margin-left: 0;
+}
+
 #icone_option {
   margin-left: -65px;
 }
+
+#hebergement {
+  width: 100%;
+  margin-right: 15px;
+
+}
+
+img.hebimg {
+  width: 90%;
+  min-width: 248px;
+}
+
+figcaption.overlay {
+  width: 78.2%;
+   min-width: 247px;
+   font-size: 0.8em;
+}
+
 
   #conteneur {
     flex-direction: column;

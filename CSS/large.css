@@ -5,3 +5,19 @@
     }  
     
 }
+
+@media (max-width: 806px) {
+  div.NDG {
+    margin: 10px 0 -50px 10px;  }
+
+ div.fort {
+    margin: 10px 0 -50px 10px;  }
+
+    img#activport {
+      height: 350px;
+}
+
+img#activcalanques {
+  height: 350px;
+}
+}

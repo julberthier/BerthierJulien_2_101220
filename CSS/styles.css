@@ -19,6 +19,8 @@ body {
 
 body {
   font-family: "Raleway", sans-serif;
+  height: 100%;
+  width: 100%;
 }
 
 a {
@@ -358,7 +360,7 @@ i.fa-info {
 }
 
 img.hebimg {
-  border-radius: 2rem;
+  border-radius: 20px;
   border: 5px solid #ffffff;
   box-shadow: 0px 0px 10px gray;
   transition: 0.8s all;
@@ -374,7 +376,7 @@ figcaption.overlay {
   width: 345px;
   height: 90px;
   border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 13px;
   font-size: 0.9em;
   font-weight: 600;
   transform: translate(18px, -114px);
@@ -569,7 +571,7 @@ div.activite_div {
   width: 340px;
 }
 
-img.activport {
+img#activport {
   height: 715px;
   width: 100%;
   border-radius: 20px;
@@ -581,7 +583,7 @@ div.fort {
   margin: 10px 0 -50px 15px;
 }
 
-img.activfort {
+img#activfort {
   height: 350px;
   width: 100%;
   border-radius: 20px;
@@ -589,7 +591,7 @@ img.activfort {
   object-fit: cover;
 }
 
-img.activfrioul {
+img#activfrioul {
   height: 350px;
   width: 100%;
   border-radius: 20px;
@@ -597,7 +599,7 @@ img.activfrioul {
   object-fit: cover;
 }
 
-img.activcalanques {
+img#activcalanques {
   height: 715px;
   width: 100%;
   border-radius: 20px;
@@ -609,7 +611,7 @@ div.NDG {
   margin: 10px 0 -50px 15px;
 }
 
-img.activNDG {
+img#activNDG {
   height: 350px;
   width: 100%;
   border-radius: 20px;
@@ -617,7 +619,7 @@ img.activNDG {
   object-fit: cover;
 }
 
-img.activparc {
+img#activparc {
   height: 350px;
   width: 100%;
   border-radius: 20px;
