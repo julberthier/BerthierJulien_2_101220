@@ -1,5 +1,8 @@
 @media (max-width: 467px) {
 
+  #menu li {
+    display: inline-block;
+  }
 
     #container_header img {
       order: 1;
@@ -9,7 +12,8 @@
       order: 2;   
       position: absolute;
       top: 43px; 
-      right: 10px;}  
+      right: 10px;
+    }  
 
     #menu {
       order: 3;
@@ -20,12 +24,28 @@
       margin-right: 0 !important;
       justify-content: center;
       font-size: 1.2em;
-      border-bottom: 2px solid gray;
     }
-  
-  .top_barre {
-    margin: 0 15px 0 15px;
+
+    #navig {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+  li.top_barre {
+    padding-bottom: 10px;
+    border-bottom: 2px solid gray;
+    width: 50%;
+    margin: 0 0 0 0;
 }  
+
+li#heb1 {
+padding-left: 17%;
+}
+
+li#heb2 {
+  padding-left: 5%;
+}
 
  .top_barre:hover {
       border-top: none;
@@ -35,7 +55,7 @@
     }
 
 #searchbar {
-  margin-left: 0px;
+  margin-left: 35px;
 }
 
 #zone_recherche{

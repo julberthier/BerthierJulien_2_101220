@@ -78,19 +78,6 @@ nav ul li {
   margin: 0 25px 0 25px;
 }
 
-#subscribe {
-  font-weight: 700;
-  text-decoration: none;
-  color: #0065fc;
-  margin-right: 2.5%;
-}
-
-@keyframes pulse {
-  to {
-    box-shadow: 0px 0px 0 18px rgb(0, 101, 252, 0.01);
-  }
-}
-
 .top_barre:hover {
   border-top: 2px solid #0065fc;
   padding-top: 43px;
@@ -99,15 +86,108 @@ nav ul li {
   transition: 0.002s all;
 }
 
+#subscribe {
+  font-weight: 700;
+  text-decoration: none;
+  color: #0065fc;
+  display: inline-block;
+  width: 80px;
+  position: relative;
+  text-align: center;
+}
+
 #subscribe a {
   color: #0065fc;
 }
 
-#subscribe:hover {
-  box-shadow: 0 0 0 0 #a9ccff;
-  animation: pulse 1s infinite;
-  border-radius: 10%;
+#subscribe:before{
+  content: '';
+  border: 2px solid transparent;
+  position: absolute;
+  top: -2px;
+  left: -2px;
 }
+
+#subscribe:hover {
+  padding-bottom: 4px;
+}
+
+#subscribe:hover:before {
+  animation: hover 0.5s linear forwards;
+}
+
+@keyframes hover {
+
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: #0065fc;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color:#0065fc;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: #0065fc;
+    border-right-color: #0065fc;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+#subscribe:after{
+  content: '';
+  border: 2px solid transparent;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
+
+#subscribe:hover:after {
+  animation: hover2 0.5s linear forwards;
+}
+
+@keyframes hover2 {
+
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #0065fc;
+  }
+
+  50% {
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #0065fc;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color:  #0065fc;
+    border-left-color:  #0065fc;
+  }
+}
+
 
 /*---- 
           
@@ -218,6 +298,29 @@ div#options div {
   padding: 0.7rem 1rem 0.7rem 3rem;
   border-radius: 50px;
   transition: 0.4s all;
+  height: 42px;
+  position: relative;
+}
+
+.libelle:after {
+  position: absolute;
+  content: "";
+  top: -1px;
+  left: 6px;
+  width: 0;
+  height: 38px;
+  background: #0065fc;
+  transition: all .35s;
+  border-radius: 50px;
+  z-index: -1;
+}
+
+.libelle:hover {
+  color: white;
+}
+
+.libelle:hover:after {
+  width: 97%;
 }
 
 #dogs {
@@ -226,10 +329,33 @@ div#options div {
   padding: 0.3rem 0.5rem 0.3rem 3rem;
   border-radius: 50px;
   transition: 0.4s all;
-  height: 45px;
+  height: 42px;
   display: flex;
-  align-items: center;
+  align-items: center;  
+  position: relative;
 }
+
+#dogs:after {
+  position: absolute;
+  content: "";
+  top: -1px;
+  left: 6px;
+  width: 0;
+  height: 38px;
+  background: #0065fc;
+  transition: all .35s;
+  border-radius: 50px;
+  z-index: -1;
+}
+
+#dogs:hover {
+  color: white;
+}
+
+#dogs:hover:after {
+  width: 97%;
+}
+
 
 /* Icones */
 
@@ -242,6 +368,7 @@ i.fa-money-bill-wave {
   width: 45px;
   height: 45px;
   transform: translate(115%, 21%);
+  z-index: 1;
 }
 
 i.fa-child {
@@ -253,6 +380,7 @@ i.fa-child {
   width: 45px;
   height: 45px;
   transform: translate(50px, 9.5px);
+  z-index: 1;
 }
 
 i.fa-heart {
@@ -264,6 +392,7 @@ i.fa-heart {
   width: 45px;
   height: 45px;
   transform: translate(115%, 21%);
+  z-index: 1;
 }
 
 i.fa-dog {
@@ -274,7 +403,8 @@ i.fa-dog {
   border-radius: 100%;
   width: 45px;
   height: 45px;
-  transform: translate(115%, 25%);
+  transform: translate(115%, 20%);
+  z-index: 1;
 }
 
 .iconebleu {
@@ -282,12 +412,12 @@ i.fa-dog {
 }
 
 .libelle:hover {
-  border: outset 3px #0065fc;
+  border: solid 3px #0065fc;
   transition: 0.2s all;
 }
 
 #dogs:hover {
-  border: outset 3px #0065fc;
+  border: solid 3px #0065fc;
   transition: 0.2s all;
 }
 
@@ -400,6 +530,7 @@ figcaption.overlay {
   transform: scale(1.05);
   transition: 0.4s all;
   border-radius: 20px;
+  
 }
 
 .blue {
