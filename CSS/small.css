@@ -40,11 +40,11 @@
 }  
 
 li#heb1 {
-padding-left: 17%;
+text-align: center;
 }
 
 li#heb2 {
-  padding-left: 5%;
+  text-align: center;
 }
 
  .top_barre:hover {
@@ -56,10 +56,15 @@ li#heb2 {
 
 #searchbar {
   margin-left: 35px;
+  width: 85vw;
 }
 
 #zone_recherche{
   margin-left: 0;
+}
+
+input#texte_recherche {
+  width: 67vw;
 }
 
 #icone_option {

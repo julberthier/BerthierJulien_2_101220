@@ -21,6 +21,11 @@
   form#searchbar {
     margin-left: 15px;
   }
+
+.figurepop {
+    margin-left: 15px;
+    margin-right: -15px;
+}
   
 img#activport {
     width: 250px;
@@ -60,7 +65,8 @@ img#activfort {
   
 }
 
-@media (max-width: 319px) {
+@media (max-width: 319px) { 
+
 
   #activite_grid {
     margin: 0 auto;
