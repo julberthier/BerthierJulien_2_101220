@@ -76,6 +76,7 @@ nav ul li {
 
 .top_barre {
   margin: 0 25px 0 25px;
+  scroll-behavior: smooth;
 }
 
 .top_barre:hover {
